@@ -1,14 +1,14 @@
 {
-    "id": "A0D17123",
-    "path": "~/Documents/GitHub/AFAAQITC-Report/Jporfolio/posts/TexasOil/oil.qmd",
-    "project_path": "posts/TexasOil/oil.qmd",
+    "id": "993B6F65",
+    "path": "~/Documents/GitHub/AFAAQITC-Report/Jporfolio/contact.qmd",
+    "project_path": "contact.qmd",
     "type": "quarto_markdown",
-    "hash": "2562573624",
+    "hash": "589679770",
     "contents": "",
     "dirty": false,
-    "created": 1724412753512.0,
+    "created": 1724423566018.0,
     "source_on_save": false,
-    "relative_order": 1,
+    "relative_order": 3,
     "properties": {
         "rmdVisualMode": "false",
         "rmdVisualWrapConfigured": "true",
@@ -16,15 +16,16 @@
         "Source": "Source",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "cursorPosition": "11,4",
-        "scrollLine": "0"
+        "cursorPosition": "7,21",
+        "scrollLine": "0",
+        "rmdVisualModeLocation": "2:0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1724412760,
+    "lastKnownWriteTime": 1724423705,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1724412760574,
+    "last_content_update": 1724423705635,
     "read_only": false,
     "read_only_alternatives": []
 }
