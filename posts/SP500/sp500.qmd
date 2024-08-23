@@ -1,0 +1,14 @@
+---
+title: "S&P 500 Forecasting Moldel"
+author: "MM"
+date: "2024-08-23"
+categories: [news,sp500,R,Yahoo]
+---
+
+![](sp500.png)
+
+## Data Period: Nov 2023 - Aug 2024
+## Target: Forecating SP500 Index Prices For Next Year.
+
+[SP500](https://afaaqitc.github.io/SP500){target="_blank"}
+

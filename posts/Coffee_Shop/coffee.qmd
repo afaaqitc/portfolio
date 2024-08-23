@@ -1,0 +1,13 @@
+---
+title: "Coffee Shop Sales Analysis Dashboard 2024!"
+author: "MM"
+date: "2024-08-23"
+categories: [Dashboard,Sales,Kaggle]
+---
+
+![](coffee.jpg)   
+
+
+Dashboard For Sales Of Coffee Shop Data
+
+[Dashboard](https://afaaqitc.github.io/coffee_shop/){target="\"_blank"}

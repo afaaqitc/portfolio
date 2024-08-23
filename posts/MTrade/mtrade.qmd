@@ -1,0 +1,17 @@
+---
+title: "Binary Trading Dashboard 2024!"
+author: "MM"
+date: "2024-08-23"
+categories: [Binary,Forex,Currencies,Dashboard]
+---
+
+![](mt.png)
+
+Dashboard For Binary Trading Data 
+
+"Cleannig Data , Make Factors , Dates Grids , Detect Currencies Countries,Round Wallet Amount Detect. "
+
+
+[Dashboard](https://afaaqitc.github.io/Trade_Report/){target="_blank}
+
+[Dashboard](https://afaaqitc.github.io/Trade_Report/){target="_blank"}
