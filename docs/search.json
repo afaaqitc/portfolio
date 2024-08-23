@@ -4,7 +4,7 @@
     "href": "Portfolio.html",
     "title": "Portfolio",
     "section": "",
-    "text": "AdventureWorks DB Dashboard 2024!\n\n\n\n\n\n\nDashboard\n\n\nSales\n\n\nSQLServer\n\n\n\n\n\n\n\n\n\nAug 23, 2024\n\n\nMM\n\n\n\n\n\n\n\n\n\n\n\n\nBinary Trading Dashboard 2024!\n\n\n\n\n\n\nBinary\n\n\nForex\n\n\nCurrencies\n\n\nDashboard\n\n\n\n\n\n\n\n\n\nAug 23, 2024\n\n\nMM\n\n\n\n\n\n\n\n\n\n\n\n\nS&P 500 Forecasting Moldel\n\n\n\n\n\n\nnews\n\n\nsp500\n\n\nR\n\n\nYahoo\n\n\n\n\n\n\n\n\n\nAug 23, 2024\n\n\nMM\n\n\n\n\n\n\n\n\n\n\n\n\nBTC Analysis Model\n\n\n\n\n\n\nnews\n\n\nCrypto\n\n\nR\n\n\nYahoo\n\n\n\n\n\n\n\n\n\nAug 23, 2024\n\n\nMM\n\n\n\n\n\n\n\n\n\n\n\n\nTexas Oil Forecasting Moldel\n\n\n\n\n\n\nnews\n\n\nOil\n\n\nBrent\n\n\nR\n\n\nYahoo\n\n\n\n\n\n\n\n\n\nAug 23, 2024\n\n\nMM\n\n\n\n\n\n\n\n\n\n\n\n\nCoffee Shop Sales Analysis Dashboard 2024!\n\n\n\n\n\n\nDashboard\n\n\nSales\n\n\nKaggle\n\n\n\n\n\n\n\n\n\nAug 23, 2024\n\n\nMM\n\n\n\n\n\n\nNo matching items"
+    "text": "AdventureWorks DB Dashboard 2024!\n\n\n\n\n\n\nDashboard\n\n\nSales\n\n\nSQLServer\n\n\n\n\n\n\n\n\n\nAug 23, 2024\n\n\nMM\n\n\n\n\n\n\n\n\n\n\n\n\nBinary Trading Dashboard 2024!\n\n\n\n\n\n\nBinary\n\n\nForex\n\n\nCurrencies\n\n\nDashboard\n\n\n\n\n\n\n\n\n\nAug 23, 2024\n\n\nMM\n\n\n\n\n\n\n\n\n\n\n\n\nS&P 500 Forecasting Moldel\n\n\n\n\n\n\nnews\n\n\nsp500\n\n\nR\n\n\nYahoo\n\n\n\n\n\n\n\n\n\nAug 23, 2024\n\n\nMM\n\n\n\n\n\n\n\n\n\n\n\n\nBTC Analysis Model\n\n\n\n\n\n\nnews\n\n\nCrypto\n\n\nR\n\n\nYahoo\n\n\n\n\n\n\n\n\n\nAug 23, 2024\n\n\nMM\n\n\n\n\n\n\n\n\n\n\n\n\nTexas Oil Forecasting Moldel\n\n\n\n\n\n\nnews\n\n\nOil\n\n\nBrent\n\n\nR\n\n\nYahoo\n\n\n\n\n\n\n\n\n\nAug 23, 2024\n\n\nMM\n\n\n\n\n\n\n\n\n\n\n\n\nSales Of Super Store Dashboard 2024!\n\n\n\n\n\n\nBinary\n\n\nForex\n\n\nCurrencies\n\n\nDashboard\n\n\n\n\n\n\n\n\n\nAug 23, 2024\n\n\nMM\n\n\n\n\n\n\n\n\n\n\n\n\nCoffee Shop Sales Analysis Dashboard 2024!\n\n\n\n\n\n\nDashboard\n\n\nSales\n\n\nKaggle\n\n\n\n\n\n\n\n\n\nAug 23, 2024\n\n\nMM\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/Coffee_Shop/coffee.html",
@@ -14,25 +14,18 @@
     "text": "Dashboard For Sales Of Coffee Shop Data\nDashboard"
   },
   {
-    "objectID": "posts/BTC/index.html",
-    "href": "posts/BTC/index.html",
-    "title": "BTC Analysis Model",
+    "objectID": "posts/TexasOil/oil.html",
+    "href": "posts/TexasOil/oil.html",
+    "title": "Texas Oil Forecasting Moldel",
     "section": "",
-    "text": "Data Periods From: Jan 2015 To Aug 2023\n\n\nTarget : Forecasting Model For Next 8 Months.\nHere"
+    "text": "Data Period: Jan 2024 - Aug 2024\n\n\nTarget: Forecating Texas Oil Index Prices For Next 18 Months.\nOIL-Forecast"
   },
   {
-    "objectID": "posts/MTrade/mtrade.html",
-    "href": "posts/MTrade/mtrade.html",
-    "title": "Binary Trading Dashboard 2024!",
+    "objectID": "posts/SP500/sp500.html",
+    "href": "posts/SP500/sp500.html",
+    "title": "S&P 500 Forecasting Moldel",
     "section": "",
-    "text": "Dashboard For Binary Trading Data\n“Cleannig Data , Make Factors , Dates Grids , Detect Currencies Countries,Round Wallet Amount Detect.”\nDashboard\nDashboard"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Mohammed Mhmoud",
-    "section": "",
-    "text": "Crypto & Data Analysis Geek\nPostgreSQL , R ,Linux , GSheets, Excel , PoweBI , Looker.Studio"
+    "text": "Data Period: Nov 2023 - Aug 2024\n\n\nTarget: Forecating SP500 Index Prices For Next Year.\nSP500"
   },
   {
     "objectID": "posts/AdvWorks_DB/adv.html",
@@ -42,32 +35,32 @@
     "text": "Dashboard For AdventureWorks Database Data\nDashboard"
   },
   {
-    "objectID": "posts/SP500/sp500.html#data-period-nov-2023---aug-2024",
-    "href": "posts/SP500/sp500.html#data-period-nov-2023---aug-2024",
-    "title": "S&P 500 Forecasting Moldel",
-    "section": "Data Period: Nov 2023 - Aug 2024",
-    "text": "Data Period: Nov 2023 - Aug 2024"
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Mohammed Mhmoud",
+    "section": "",
+    "text": "Crypto & Data Analysis Geek\nPostgreSQL , R ,Linux , GSheets, Excel , PoweBI , Looker.Studio"
   },
   {
-    "objectID": "posts/SP500/sp500.html#target-forecating-sp500-index-prices-for-next-year.",
-    "href": "posts/SP500/sp500.html#target-forecating-sp500-index-prices-for-next-year.",
-    "title": "S&P 500 Forecasting Moldel",
-    "section": "Target: Forecating SP500 Index Prices For Next Year.",
-    "text": "Target: Forecating SP500 Index Prices For Next Year.\nSP500"
+    "objectID": "posts/MTrade/mtrade.html",
+    "href": "posts/MTrade/mtrade.html",
+    "title": "Binary Trading Dashboard 2024!",
+    "section": "",
+    "text": "Dashboard For Binary Trading Data\n\n\n“Cleannig Data , Make Factors , Dates Grids , Detect Currencies Countries,Round Wallet Amount Detect.”\nDashboard"
   },
   {
-    "objectID": "posts/TexasOil/oil.html#data-period-jan-2024---aug-2024",
-    "href": "posts/TexasOil/oil.html#data-period-jan-2024---aug-2024",
-    "title": "Texas Oil Forecasting Moldel",
-    "section": "Data Period: Jan 2024 - Aug 2024",
-    "text": "Data Period: Jan 2024 - Aug 2024"
+    "objectID": "posts/BTC/index.html",
+    "href": "posts/BTC/index.html",
+    "title": "BTC Analysis Model",
+    "section": "",
+    "text": "Data Periods From: Jan 2015 To Aug 2023\n\n\nTarget : Forecasting Model For Next 8 Months.\nHere"
   },
   {
-    "objectID": "posts/TexasOil/oil.html#target-forecating-texas-oil-index-prices-for-next-18-months.",
-    "href": "posts/TexasOil/oil.html#target-forecating-texas-oil-index-prices-for-next-18-months.",
-    "title": "Texas Oil Forecasting Moldel",
-    "section": "Target: Forecating Texas Oil Index Prices For Next 18 Months.",
-    "text": "Target: Forecating Texas Oil Index Prices For Next 18 Months.\nOIL-Forecast"
+    "objectID": "posts/super_store/super_store.html",
+    "href": "posts/super_store/super_store.html",
+    "title": "Sales Of Super Store Dashboard 2024!",
+    "section": "",
+    "text": "Dashboard Super Store Dataset\n\n\n“Cleannig Data , Make Factors , Dates Grids”\nDashboard"
   },
   {
     "objectID": "contact.html",

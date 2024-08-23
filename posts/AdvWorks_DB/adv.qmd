@@ -7,6 +7,6 @@ categories: [Dashboard,Sales,SQLServer]
 
 ![](adv.jpeg)
 
-Dashboard For AdventureWorks Database Data
+#### Dashboard For AdventureWorks Database Data
 
 [Dashboard](https://afaaqitc.github.io/AdvWorks-Report/){target="\"_blank"}

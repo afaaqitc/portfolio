@@ -5,9 +5,8 @@ date: "2024-08-23"
 categories: [Dashboard,Sales,Kaggle]
 ---
 
-![](coffee.jpg)   
+![](coffee.jpg)
 
-
-Dashboard For Sales Of Coffee Shop Data
+#### Dashboard For Sales Of Coffee Shop Data
 
 [Dashboard](https://afaaqitc.github.io/coffee_shop/){target="\"_blank"}
