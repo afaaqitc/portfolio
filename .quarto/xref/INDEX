@@ -1,0 +1,29 @@
+{
+  "index.qmd": {
+    "index.html": "b00d3531"
+  },
+  "posts/AdvWorks_DB/adv.qmd": {
+    "adv.html": "283ac61a"
+  },
+  "posts/MTrade/mtrade.qmd": {
+    "mtrade.html": "efa48513"
+  },
+  "posts/SP500/sp500.qmd": {
+    "sp500.html": "b42c264c"
+  },
+  "posts/BTC/index.qmd": {
+    "index.html": "18b32ed8"
+  },
+  "posts/TexasOil/oil.qmd": {
+    "oil.html": "22687dcb"
+  },
+  "posts/Coffee_Shop/coffee.qmd": {
+    "coffee.html": "f7621417"
+  },
+  "contact.qmd": {
+    "contact.html": "ea570388"
+  },
+  "Portfolio.qmd": {
+    "Portfolio.html": "c40836c8"
+  }
+}
