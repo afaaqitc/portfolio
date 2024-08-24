@@ -9,5 +9,4 @@ about:
       href: https://github.com/afaaqitc 
 ---
 ###### Crypto & Data Analysis Geek
-
 ###### PostgreSQL , R ,Linux , GSheets, Excel , PoweBI , Looker.Studio
