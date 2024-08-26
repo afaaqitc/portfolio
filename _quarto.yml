@@ -12,7 +12,7 @@ website:
     right:
       - text: "Contact"
         file: contact.qmd
-      - text: "Learn.Videos"
+      - text: "Learn"
         file: Blog.qmd
       - icon: github
         href: https://github.com/afaaqitc

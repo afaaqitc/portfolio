@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/AFAAQITC-Report/Jporfolio/_quarto.yml",
     "project_path": "_quarto.yml",
     "type": "yaml",
-    "hash": "3268798149",
+    "hash": "1455760181",
     "contents": "",
     "dirty": false,
     "created": 1724692991147.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "14,21",
+        "cursorPosition": "14,20",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1724694826,
+    "lastKnownWriteTime": 1724701037,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1724694826817,
+    "last_content_update": 1724701037665,
     "read_only": false,
     "read_only_alternatives": []
 }
