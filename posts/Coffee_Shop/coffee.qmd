@@ -10,3 +10,8 @@ categories: [Dashboard,Sales,Kaggle]
 #### Dashboard For Sales Of Coffee Shop Data
 
 [Dashboard](https://afaaqitc.github.io/coffee_shop/){target="\"_blank"}
+
+
+[Dataset](coffee.csv){target="\"_blank"}
+
+
