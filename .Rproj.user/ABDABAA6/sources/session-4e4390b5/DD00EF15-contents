@@ -1,0 +1,294 @@
+---
+title: "Coffee_Shop"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+
+
+library(janitor)
+library(tidyr)
+library(dplyr)
+library(lubridate)
+library(formattable)
+library(stringr)
+library(fedmatch)
+library(ggplot2)
+library(plotly)
+library(openxlsx)
+library(readxl)
+library(readODS)
+library(DT)
+ 
+setwd("~/Documents/GitHub/AFAAQITC-Report/coffee_shop/")
+
+fi<-read.csv(file = "coffee.csv")
+
+fi<-
+fi %>% select(- 1) %>%mutate(date=as.POSIXct(datetime),dates=as.Date(datetime))%>%
+mutate(years=year(dates),months=format(dates,"%b"),
+week_month=paste0(format(dates,"%V"),"-",format(dates,"%b")),
+weekn=format(dates,"%V"),days=weekdays(dates),hours=hour(datetime),
+cash_n=case_when(cash_type=="card"~0,TRUE~1),card_n=case_when(cash_type=="card"~1,TRUE~0)) 
+
+
+fi$card<-ifelse(fi$card=="","cash",fi$card)
+
+#--------------------------------------------------------------------------------------------
+  
+daily_totals<-
+fi %>% group_by(dates) %>% summarize(total=sum(money) , 
+items=n(),card=sum(card_n),cash=sum(cash_n)) %>% arrange(dates ,by_group =TRUE) %>% 
+mutate(pct=(total/sum(fi$money))*100) 
+
+daily_totals_dt<-
+daily_totals %>%arrange(dates) %>% 
+datatable(filter = "top",class = "hover row-border strip", 
+extensions =list(Buttons=TRUE) ,
+options =list(dom="Bfrtip",buttons=c("excel","csv","pdf"),
+columnDefs=list(list(className="dt-center",targets=1:6)))) %>% 
+formatCurrency(columns = 2,digits = 2) %>% formatPercentage(columns = 6,digits = 2)
+
+
+
+
+month_totals_totals<-
+fi %>%  group_by(months=factor(months,levels=c("Mar","Apr","May","Jun","Jul"))) %>%
+summarize(orders=n(),cash=sum(cash_n),card=sum(card_n),sales=comma(sum(money)),
+pct=(sum(money)/sum(fi$money))) %>% datatable(class="hover row-border ", 
+extensions = list(Buttons=TRUE),options = list(dom="Bfrtip",
+buttons=c("csv","excel","pdf"),columnDefs=list(list(className="dt-center",targets=1:6)))) %>% 
+formatPercentage(columns = 6,digits = 2) %>% formatCurrency(columns = 5,digits = 2)
+
+
+
+month_totals_chart<-
+fi %>% mutate(mn=paste0(month(as.Date(datetime)),"-",months)) %>% 
+  group_by(months=factor(months,levels=c("Mar","Apr","May","Jun","Jul"))) %>% 
+  summarize(total=comma(sum(money)))  %>% 
+  ggplot(aes(x=months,y=total,fill=months))+geom_bar(stat = "identity")+
+  geom_text(aes(label=comma(total,digits = 0)),size=3.5,fontface = "bold",color="white",position = position_stack(vjust = 0.5))+
+  theme_bw()+
+  scale_fill_brewer(palette = "Set1")+
+  theme(axis.text.x = element_text(face = "bold",colour = "black",size =11),
+        axis.text.y = element_text(face = "bold",colour = "black",size = 11))+
+  labs(x="",y="",
+       subtitle = paste0("Total: ",comma(sum(fi$money),2)," | ",
+                         "Orders: ",sum(daily_totals$items)))+
+  scale_y_continuous(limits = c(0,10000))
+
+#--------------------------------------------------------------------------------------------
+week_totals<-
+fi %>% group_by(week_month,days) %>% 
+summarize(total=sum(money)) %>%
+pivot_wider(id_cols =week_month ,names_from =days ,values_from =total ,values_fill = FALSE) %>%
+adorn_totals("col")%>%  mutate(pct=round((Total/sum(fi$money))*100,2)) %>%
+select(week_month,Saturday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Total,pct) 
+
+week_totals_dt<-
+week_totals %>% datatable(class = "hover row-border",
+extensions = list(Buttons=TRUE),
+options = list(dom="Bfrtip",buttons=c("csv","excel","pdf"),
+columnDefs=list(list(className="dt-center",targets=1:10)))) %>% 
+formatPercentage(columns = 10,digits = 2) %>% formatCurrency(columns = c(2:9),digits = 2)
+
+week_totals_chart<-
+fi %>% group_by(dates=as.POSIXct(dates) ) %>% summarize(total=sum(money)) %>% 
+ggplot(aes(x=dates,y=total))+geom_line(color="#00b894")+
+scale_x_datetime(date_labels = "%V-%b",date_breaks = "1 week")+theme_bw()+
+scale_fill_brewer(palette = "Set1")+
+  theme(axis.text.x = element_text(face = "bold",colour = "black",size = 9),
+        axis.text.y = element_text(face = "bold",colour = "black",size = 9))+
+  labs(x="",y="",
+       subtitle = paste0("Total: ",comma(sum(fi$money),2)," | ",
+                         "Orders: ",sum(daily_totals$items)))+geom_smooth(method = "lm",se = FALSE)
+
+#-----------------------------------------------------------------------------------
+item_totals<- 
+fi %>% group_by(coffee_name) %>% 
+summarize(orders=n(),card=sum(card_n),cash=sum(cash_n),total=round(sum(money),2),
+pct=round((sum(money)/sum(fi$money))*100,2)) %>% 
+arrange(desc(total),by_group=TRUE)
+
+item_totals_dt<-
+item_totals %>% datatable(class = "hover row-border",extensions = list(Buttons=TRUE),
+options = list(dom="Bfrtip",buttons=c("excel","csv","pdf"),
+columnDefs=list(list(className="dt-center",targets=1:6)))) %>% 
+formatCurrency(columns =5 ,digits = 2) %>% formatPercentage(columns = 6,digits = 2)
+
+item_totals_chart<-
+item_totals %>% ggplot(aes(x=reorder(coffee_name,total),y=total,fill = coffee_name))+
+geom_bar(stat = "identity")+
+  geom_text(aes(label=comma(total,digits = 2)),size=2.5,color="white",
+position = position_stack(vjust = 0.5))+
+labs(x="",y="",
+subtitle = paste0("Total: ",comma(sum(fi$money),2)," | ",
+                  "Orders: ",sum(daily_totals$items)))+
+theme_bw()+scale_fill_brewer(palette = "Set1")+
+theme(axis.text.x = element_text(face = "bold",colour = "black",size = 10),
+      axis.text.y = element_text(face = "bold",colour = "black",size = 8),legend.position = "none")+coord_flip()
+#--------------------------------------------------------------------------------------------
+  
+pay_methods<-
+fi %>% group_by(cash_type) %>%
+summarize(orders=n(),card=sum(card_n),cash=sum(cash_n),total=sum(money),
+pct=round((sum(money)/sum(fi$money))*100,2)) %>% 
+arrange(desc(total),by_group=TRUE)
+
+pay_methods_dt<-
+pay_methods%>% 
+datatable(class = "hover row-border",extensions = list(Buttons=TRUE),
+options = list(dom="Bfrtip",buttons=c("excel","csv","pdf"),
+columnDefs=list(list(className="dt-center",targets=1:6)))) %>% 
+formatCurrency(columns =5 ,digits = 2) %>% formatPercentage(columns = 6,digits = 2)
+
+
+pay_methods_chart<-
+fi %>% group_by(cash_type=as.factor(cash_type)) %>% 
+summarize(total=comma(sum(money),1)) %>%
+ggplot(aes(x="",y=total,fill=cash_type))+geom_bar(stat = "identity")+
+coord_polar(theta = "y")+theme_void()+
+geom_text(aes(label=comma(total,digits = 2)),size=4.5,color="white",
+position = position_stack(vjust = 0.5))+
+scale_fill_brewer(palette = "Set1")+
+  labs(x="",y="",
+       subtitle = paste0("Total: ",comma(sum(fi$money),2)," | ",
+                         "Orders: ",sum(daily_totals$items)))
+#-----------------------------------------------------------------------------
+
+days_totals<-
+fi %>% group_by(days=factor(days,levels=c("Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday"))) %>% 
+summarize(orders=n(),total=sum(money),pct=(sum(money)/sum(fi$money))) 
+
+days_totals_dt<-
+days_totals %>% adorn_totals("row")%>% datatable(class = "hover row-border",
+extensions = list(Buttons=TRUE),
+options = list(dom="Bfrtip",buttons=c("csv","excel","pdf"),
+columnDefs=list(list(className="dt-center",targets=1:4)))) %>% 
+formatPercentage(columns = 4,digits = 2) %>% formatCurrency(columns = 3,digits = 2)
+
+
+
+days_totals_chart<-
+days_totals %>% mutate(profit=comma(total)) %>% 
+ggplot(aes(x=days,y=profit,fill = days))+geom_bar(stat = "identity")+
+geom_text(aes(label=comma(profit,digits = 2)),size=4.5,color="white",
+position = position_stack(vjust = 0.5))+
+scale_fill_brewer(palette = "Set1")+
+labs(x="",y="",
+subtitle = paste0("Total: ",comma(sum(fi$money),2)," | ",
+"Orders: ",sum(daily_totals$items)))+
+theme_bw()+scale_fill_brewer(palette = "Set1")+
+theme(axis.text.x = element_text(face = "bold",colour = "black",size = 9),
+axis.text.y = element_text(face = "bold",colour = "black",size = 9),legend.position = "none")
+
+
+
+```
+
+# Main
+## row{data-width=10}
+
+### Sales
+```{r}
+valueBox(value = comma(sum(fi$money),digits = 2),caption ="Sales" ,icon ="fa fa-money" ,color ="#b2bec3" )
+```
+
+### Orders 
+```{r}
+valueBox(value =sum(daily_totals$items),caption ="Orders" ,icon ="fa fa-shopping-cart" ,color ="#b2bec3" )
+```
+
+### Days
+```{r}
+valueBox(value =nrow(daily_totals),caption ="Days" ,icon ="fa fa-calendar" ,color ="#b2bec3" )
+```
+
+## row{data-hight=500}
+### Items
+```{r}
+item_totals_dt
+```
+
+### Item_Chart
+```{r}
+ggplotly( item_totals_chart,width = 600)
+```
+
+
+
+
+# Payment_Methods
+## row{data-hight=10}
+### Cards 
+```{r}
+valueBox(value =sum(daily_totals$card),caption ="Card" ,icon ="fa fa-credit-card-alt" ,color ="#b2bec3" )
+```
+
+### Cash
+```{r}
+valueBox(value =sum(daily_totals$cash),caption ="Cash" ,icon ="fa fa-money" ,color ="#b2bec3" )
+```
+
+## row{data-hight=500,.tabset}
+### Payment_TBL
+```{r}
+pay_methods_dt
+```
+
+### Payment_Chart
+```{r}
+pay_methods_chart
+```
+
+
+
+# Months
+## row{date-hight=500}
+### Months_TBL
+```{r}
+month_totals_totals
+```
+
+
+### Months_chart
+```{r}
+ggplotly(month_totals_chart,width = 600)
+```
+
+# Weeks
+## row{.tabset}
+### Weeks_TBL
+```{r}
+week_totals_dt
+```
+
+### Weeks_Chart
+```{r}
+ggplotly(week_totals_chart,width = 1000)
+```
+
+
+# Daily
+## row{.tabset}
+### Daily_TBL
+```{r}
+daily_totals_dt
+```
+
+# Days
+## row{data-hight=350}
+### Days_TBL
+```{r}
+days_totals_dt
+```
+
+### Chart
+```{r}
+ggplotly( days_totals_chart,width = 650)
+```
+

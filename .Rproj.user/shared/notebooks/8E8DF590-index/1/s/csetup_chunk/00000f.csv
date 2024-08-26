@@ -1,0 +1,255 @@
+"0","library(flexdashboard)"
+"2","Registered S3 methods overwritten by 'htmltools':
+  method               from         
+  print.html           tools:rstudio
+  print.shiny.tag      tools:rstudio
+  print.shiny.tag.list tools:rstudio
+"
+"2","Registered S3 method overwritten by 'rmarkdown':
+  method         from
+  print.paged_df     
+"
+"0","library(janitor)"
+"2","
+Attaching package: ‘janitor’
+
+"
+"2","The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+"
+"0","library(tidyr)"
+"0","library(dplyr)"
+"2","
+Attaching package: ‘dplyr’
+
+"
+"2","The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+"
+"2","The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+"
+"0","library(lubridate)"
+"2","
+Attaching package: ‘lubridate’
+
+"
+"2","The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+"
+"0","library(formattable)"
+"2","Registered S3 method overwritten by 'htmlwidgets':
+  method           from         
+  print.htmlwidget tools:rstudio
+"
+"0","library(stringr)"
+"0","library(fedmatch)"
+"2","Registered S3 method overwritten by 'data.table':
+  method           from
+  print.data.table     
+"
+"0","library(ggplot2)"
+"0","library(plotly)"
+"2","
+Attaching package: ‘plotly’
+
+"
+"2","The following object is masked from ‘package:ggplot2’:
+
+    last_plot
+
+"
+"2","The following object is masked from ‘package:formattable’:
+
+    style
+
+"
+"2","The following object is masked from ‘package:stats’:
+
+    filter
+
+"
+"2","The following object is masked from ‘package:graphics’:
+
+    layout
+
+"
+"0","library(openxlsx)"
+"0","library(readxl)"
+"0","library(readODS)"
+"0","library(DT)"
+"0"," "
+"0","setwd(""~/Documents/GitHub/AFAAQITC-Report/coffee_shop/"")"
+"0",""
+"0","fi<-read.csv(file = ""coffee.csv"")"
+"0",""
+"0","fi<-"
+"0","fi %>% select(- 1) %>%mutate(date=as.POSIXct(datetime),dates=as.Date(datetime))%>%"
+"0","mutate(years=year(dates),months=format(dates,""%b""),"
+"0","week_month=paste0(format(dates,""%V""),""-"",format(dates,""%b"")),"
+"0","weekn=format(dates,""%V""),days=weekdays(dates),hours=hour(datetime),"
+"0","cash_n=case_when(cash_type==""card""~0,TRUE~1),card_n=case_when(cash_type==""card""~1,TRUE~0)) "
+"0",""
+"0",""
+"0","fi$card<-ifelse(fi$card=="""",""cash"",fi$card)"
+"0",""
+"0","#--------------------------------------------------------------------------------------------"
+"0","  "
+"0","daily_totals<-"
+"0","fi %>% group_by(dates) %>% summarize(total=sum(money) , "
+"0","items=n(),card=sum(card_n),cash=sum(cash_n)) %>% arrange(dates ,by_group =TRUE) %>% "
+"0","mutate(pct=(total/sum(fi$money))*100) "
+"0",""
+"0","daily_totals_dt<-"
+"0","daily_totals %>%arrange(dates) %>% "
+"0","datatable(filter = ""top"",class = ""hover row-border strip"", "
+"0","extensions =list(Buttons=TRUE) ,"
+"0","options =list(dom=""Bfrtip"",buttons=c(""excel"",""csv"",""pdf""),"
+"0","columnDefs=list(list(className=""dt-center"",targets=1:6)))) %>% "
+"0","formatCurrency(columns = 2,digits = 2) %>% formatPercentage(columns = 6,digits = 2)"
+"0",""
+"0",""
+"0",""
+"0",""
+"0","month_totals_totals<-"
+"0","fi %>%  group_by(months=factor(months,levels=c(""Mar"",""Apr"",""May"",""Jun"",""Jul""))) %>%"
+"0","summarize(orders=n(),cash=sum(cash_n),card=sum(card_n),sales=comma(sum(money)),"
+"0","pct=(sum(money)/sum(fi$money))) %>% datatable(class=""hover row-border "", "
+"0","extensions = list(Buttons=TRUE),options = list(dom=""Bfrtip"","
+"0","buttons=c(""csv"",""excel"",""pdf""),columnDefs=list(list(className=""dt-center"",targets=1:6)))) %>% "
+"0","formatPercentage(columns = 6,digits = 2) %>% formatCurrency(columns = 5,digits = 2)"
+"0",""
+"0",""
+"0",""
+"0","month_totals_chart<-"
+"0","fi %>% mutate(mn=paste0(month(as.Date(datetime)),""-"",months)) %>% "
+"0","  group_by(months=factor(months,levels=c(""Mar"",""Apr"",""May"",""Jun"",""Jul""))) %>% "
+"0","  summarize(total=comma(sum(money)))  %>% "
+"0","  ggplot(aes(x=months,y=total,fill=months))+geom_bar(stat = ""identity"")+"
+"0","  geom_text(aes(label=comma(total,digits = 0)),size=3.5,fontface = ""bold"",color=""white"",position = position_stack(vjust = 0.5))+"
+"0","  theme_bw()+"
+"0","  scale_fill_brewer(palette = ""Set1"")+"
+"0","  theme(axis.text.x = element_text(face = ""bold"",colour = ""black"",size =11),"
+"0","        axis.text.y = element_text(face = ""bold"",colour = ""black"",size = 11))+"
+"0","  labs(x="""",y="""","
+"0","       subtitle = paste0(""Total: "",comma(sum(fi$money),2),"" | "","
+"0","                         ""Orders: "",sum(daily_totals$items)))+"
+"0","  scale_y_continuous(limits = c(0,10000))"
+"0",""
+"0","#--------------------------------------------------------------------------------------------"
+"0","week_totals<-"
+"0","fi %>% group_by(week_month,days) %>% "
+"0","summarize(total=sum(money)) %>%"
+"0","pivot_wider(id_cols =week_month ,names_from =days ,values_from =total ,values_fill = FALSE) %>%"
+"0","adorn_totals(""col"")%>%  mutate(pct=round((Total/sum(fi$money))*100,2)) %>%"
+"0","select(week_month,Saturday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Total,pct) "
+"1","[38;5;232m`summarise()` has grouped output by 'week_month'. You can override using
+the `.groups` argument.[39m
+"
+"0","week_totals_dt<-"
+"0","week_totals %>% datatable(class = ""hover row-border"","
+"0","extensions = list(Buttons=TRUE),"
+"0","options = list(dom=""Bfrtip"",buttons=c(""csv"",""excel"",""pdf""),"
+"0","columnDefs=list(list(className=""dt-center"",targets=1:10)))) %>% "
+"0","formatPercentage(columns = 10,digits = 2) %>% formatCurrency(columns = c(2:9),digits = 2)"
+"0",""
+"0","week_totals_chart<-"
+"0","fi %>% group_by(dates=as.POSIXct(dates) ) %>% summarize(total=sum(money)) %>% "
+"0","ggplot(aes(x=dates,y=total))+geom_line(color=""#00b894"")+"
+"0","scale_x_datetime(date_labels = ""%V-%b"",date_breaks = ""1 week"")+theme_bw()+"
+"0","scale_fill_brewer(palette = ""Set1"")+"
+"0","  theme(axis.text.x = element_text(face = ""bold"",colour = ""black"",size = 9),"
+"0","        axis.text.y = element_text(face = ""bold"",colour = ""black"",size = 9))+"
+"0","  labs(x="""",y="""","
+"0","       subtitle = paste0(""Total: "",comma(sum(fi$money),2),"" | "","
+"0","                         ""Orders: "",sum(daily_totals$items)))+geom_smooth(method = ""lm"",se = FALSE)"
+"0",""
+"0","#-----------------------------------------------------------------------------------"
+"0","item_totals<- "
+"0","fi %>% group_by(coffee_name) %>% "
+"0","summarize(orders=n(),card=sum(card_n),cash=sum(cash_n),total=round(sum(money),2),"
+"0","pct=round((sum(money)/sum(fi$money))*100,2)) %>% "
+"0","arrange(desc(total),by_group=TRUE)"
+"0",""
+"0","item_totals_dt<-"
+"0","item_totals %>% datatable(class = ""hover row-border"",extensions = list(Buttons=TRUE),"
+"0","options = list(dom=""Bfrtip"",buttons=c(""excel"",""csv"",""pdf""),"
+"0","columnDefs=list(list(className=""dt-center"",targets=1:6)))) %>% "
+"0","formatCurrency(columns =5 ,digits = 2) %>% formatPercentage(columns = 6,digits = 2)"
+"0",""
+"0","item_totals_chart<-"
+"0","item_totals %>% ggplot(aes(x=reorder(coffee_name,total),y=total,fill = coffee_name))+"
+"0","geom_bar(stat = ""identity"")+"
+"0","  geom_text(aes(label=comma(total,digits = 2)),size=2.5,color=""white"","
+"0","position = position_stack(vjust = 0.5))+"
+"0","labs(x="""",y="""","
+"0","subtitle = paste0(""Total: "",comma(sum(fi$money),2),"" | "","
+"0","                  ""Orders: "",sum(daily_totals$items)))+"
+"0","theme_bw()+scale_fill_brewer(palette = ""Set1"")+"
+"0","theme(axis.text.x = element_text(face = ""bold"",colour = ""black"",size = 10),"
+"0","      axis.text.y = element_text(face = ""bold"",colour = ""black"",size = 8),legend.position = ""none"")+coord_flip()"
+"0","#--------------------------------------------------------------------------------------------"
+"0","  "
+"0","pay_methods<-"
+"0","fi %>% group_by(cash_type) %>%"
+"0","summarize(orders=n(),card=sum(card_n),cash=sum(cash_n),total=sum(money),"
+"0","pct=round((sum(money)/sum(fi$money))*100,2)) %>% "
+"0","arrange(desc(total),by_group=TRUE)"
+"0",""
+"0","pay_methods_dt<-"
+"0","pay_methods%>% "
+"0","datatable(class = ""hover row-border"",extensions = list(Buttons=TRUE),"
+"0","options = list(dom=""Bfrtip"",buttons=c(""excel"",""csv"",""pdf""),"
+"0","columnDefs=list(list(className=""dt-center"",targets=1:6)))) %>% "
+"0","formatCurrency(columns =5 ,digits = 2) %>% formatPercentage(columns = 6,digits = 2)"
+"0",""
+"0",""
+"0","pay_methods_chart<-"
+"0","fi %>% group_by(cash_type=as.factor(cash_type)) %>% "
+"0","summarize(total=comma(sum(money),1)) %>%"
+"0","ggplot(aes(x="""",y=total,fill=cash_type))+geom_bar(stat = ""identity"")+"
+"0","coord_polar(theta = ""y"")+theme_void()+"
+"0","geom_text(aes(label=comma(total,digits = 2)),size=4.5,color=""white"","
+"0","position = position_stack(vjust = 0.5))+"
+"0","scale_fill_brewer(palette = ""Set1"")+"
+"0","  labs(x="""",y="""","
+"0","       subtitle = paste0(""Total: "",comma(sum(fi$money),2),"" | "","
+"0","                         ""Orders: "",sum(daily_totals$items)))"
+"0","#-----------------------------------------------------------------------------"
+"0",""
+"0","days_totals<-"
+"0","fi %>% group_by(days=factor(days,levels=c(""Saturday"",""Sunday"",""Monday"",""Tuesday"",""Wednesday"",""Thursday"",""Friday""))) %>% "
+"0","summarize(orders=n(),total=sum(money),pct=(sum(money)/sum(fi$money))) "
+"0",""
+"0","days_totals_dt<-"
+"0","days_totals %>% adorn_totals(""row"")%>% datatable(class = ""hover row-border"","
+"0","extensions = list(Buttons=TRUE),"
+"0","options = list(dom=""Bfrtip"",buttons=c(""csv"",""excel"",""pdf""),"
+"0","columnDefs=list(list(className=""dt-center"",targets=1:4)))) %>% "
+"0","formatPercentage(columns = 4,digits = 2) %>% formatCurrency(columns = 3,digits = 2)"
+"0",""
+"0",""
+"0",""
+"0","days_totals_chart<-"
+"0","days_totals %>% mutate(profit=comma(total)) %>% "
+"0","ggplot(aes(x=days,y=profit,fill = days))+geom_bar(stat = ""identity"")+"
+"0","geom_text(aes(label=comma(profit,digits = 2)),size=4.5,color=""white"","
+"0","position = position_stack(vjust = 0.5))+"
+"0","scale_fill_brewer(palette = ""Set1"")+"
+"0","labs(x="""",y="""","
+"0","subtitle = paste0(""Total: "",comma(sum(fi$money),2),"" | "","
+"0","""Orders: "",sum(daily_totals$items)))+"
+"0","theme_bw()+scale_fill_brewer(palette = ""Set1"")+"
+"0","theme(axis.text.x = element_text(face = ""bold"",colour = ""black"",size = 9),"
+"0","axis.text.y = element_text(face = ""bold"",colour = ""black"",size = 9),legend.position = ""none"")"
+"1","[38;5;232mScale for [32mfill[38;5;232m is already present.
+Adding another scale for [32mfill[38;5;232m, which will replace the existing scale.[39m
+"
