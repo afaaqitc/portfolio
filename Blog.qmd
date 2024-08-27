@@ -3,3 +3,8 @@
 ----------------------------------------------------------
 ### Analysis of Variance (ANOVA) R
 <iframe width="460" height="315" src="https://www.youtube.com/embed/5SIifsW2aKA?si=KhV1ZKxWOejwBWkZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+### Unpaired (Independent) T-test in R
+<iframe width="460" height="315" src="https://www.youtube.com/embed/EfnZKroEUCM?si=LO4ELhaiMlyTJQUO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
