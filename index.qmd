@@ -9,7 +9,7 @@ about:
       # href: https://github.com/afaaqitc 
     - icon: telegram
       text: Telegram
-      href: https://t.me/+Z2tGMdC-58RmNDhk
+      href: https://t.me/j_alfie
 ---
 
 ###### Crypto & Data Analysis Geek

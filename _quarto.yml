@@ -2,12 +2,12 @@ project:
   type: website
   output-dir: "docs"
 website:
-  title: "Mohamed Mhmoud"
+  title: "Protfolio"
   navbar:
     left: 
       - text: "Home"
         file: index.qmd
-      - text: "Portfolio"
+      - text: "Projects"
         file: Portfolio.qmd
     right:
       - text: "Contact"
