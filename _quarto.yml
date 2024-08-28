@@ -9,9 +9,9 @@ website:
         file: Portfolio.qmd
       - text: "Contact"
         file: contact.qmd
-      - text: "Learn"
-        file: Blog.qmd  
     right:
+      - text: "Learn"
+        file: Blog.qmd
       - icon: github
         href: https://github.com/afaaqitc
 format:
