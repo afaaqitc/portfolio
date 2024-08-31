@@ -4,7 +4,7 @@ author: "MM"
 date: "2024-08-23"
 categories: [PowerBI,Dashboard]
 ---
- 
-![](1.png){width="600px" height="400px"}
 
-![](2.png){width="600px" height="400px"}
+![](1.png){width="500px" height="300px"}
+
+![](2.png){width="500px" height="300px"}
