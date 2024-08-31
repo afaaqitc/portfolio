@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/AFAAQITC-Report/Jporfolio/posts/Paients_BI/index.qmd",
     "project_path": "posts/Paients_BI/index.qmd",
     "type": "quarto_markdown",
-    "hash": "2811375297",
+    "hash": "2183469040",
     "contents": "",
     "dirty": false,
     "created": 1725119369885.0,
@@ -17,15 +17,15 @@
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
         "rmdVisualModeLocation": "104:0",
-        "cursorPosition": "7,40",
+        "cursorPosition": "7,11",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1725129416,
+    "lastKnownWriteTime": 1725130130,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1725129416440,
+    "last_content_update": 1725130130210,
     "read_only": false,
     "read_only_alternatives": []
 }
