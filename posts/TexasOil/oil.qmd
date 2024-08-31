@@ -2,7 +2,7 @@
 title: "Texas Oil Forecasting Moldel"
 author: "MM"
 date: "2024-08-23"
-categories: [news,Oil,Brent,R,Yahoo]
+categories: [R,Analysis]
 ---
 
 ![](toil.jpg)

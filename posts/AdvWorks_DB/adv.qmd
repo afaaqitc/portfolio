@@ -2,7 +2,7 @@
 title: "AdventureWorks DB Dashboard 2024!"
 author: "MM"
 date: "2024-08-23"
-categories: [Dashboard,Sales,SQLServer]
+categories: [Dashboard,R,SQLServer]
 ---
 
 ![](adv.jpeg)

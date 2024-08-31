@@ -2,7 +2,7 @@
 title: "BTC Analysis Model"
 author: "MM"
 date: "2024-08-23"
-categories: [news,Crypto,R,Yahoo]
+categories: [R,Analysis]
 ---
 
 ![](btc.jpeg)

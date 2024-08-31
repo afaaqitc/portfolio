@@ -2,7 +2,7 @@
 title: "S&P 500 Forecasting Moldel"
 author: "MM"
 date: "2024-08-23"
-categories: [news,sp500,R,Yahoo]
+categories: [R,Analysis]
 ---
 
 ![](sp500.png)

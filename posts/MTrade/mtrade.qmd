@@ -2,7 +2,7 @@
 title: "Binary Trading Dashboard 2024!"
 author: "MM"
 date: "2024-08-23"
-categories: [Binary,Forex,Currencies,Dashboard]
+categories: [Dashboard,R]
 ---
 
 ![](mt.png)
