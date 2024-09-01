@@ -1,14 +1,14 @@
 {
-    "id": "1A9820D6",
-    "path": "~/Documents/GitHub/AFAAQITC-Report/Jporfolio/posts/Coffee_Shop/coffee.qmd",
-    "project_path": "posts/Coffee_Shop/coffee.qmd",
+    "id": "29A2EAC4",
+    "path": "~/Documents/GitHub/AFAAQITC-Report/Jporfolio/posts/SuperStore_BI/index.qmd",
+    "project_path": "posts/SuperStore_BI/index.qmd",
     "type": "quarto_markdown",
-    "hash": "4030118516",
+    "hash": "1413295971",
     "contents": "",
     "dirty": false,
-    "created": 1725129170918.0,
+    "created": 1725198336130.0,
     "source_on_save": false,
-    "relative_order": 2,
+    "relative_order": 1,
     "properties": {
         "rmdVisualMode": "false",
         "rmdVisualWrapConfigured": "true",
@@ -16,16 +16,16 @@
         "Source": "Source",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "cursorPosition": "0,0",
-        "scrollLine": "0",
-        "rmdVisualModeLocation": "120:0"
+        "rmdVisualModeLocation": "1:0",
+        "cursorPosition": "9,12",
+        "scrollLine": "8"
     },
     "folds": "",
-    "lastKnownWriteTime": 1725129240,
+    "lastKnownWriteTime": 1725198393,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1725129240557,
+    "last_content_update": 1725198393187,
     "read_only": false,
     "read_only_alternatives": []
 }
