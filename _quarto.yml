@@ -7,11 +7,11 @@ website:
     left: 
       - text: "Projects"
         file: Portfolio.qmd
+      - text: "Certificates"
+        file: Blog.qmd
       - text: "Contact"
         file: contact.qmd
     right:
-      - text: "Learn"
-        file: Blog.qmd
       - icon: github
         href: https://github.com/afaaqitc
 format:

@@ -7,8 +7,6 @@ categories: [PowerBI,Dashboard]
 
 ![](11.png)
 
-![](22.png) 
-
+![](22.png)
 
 ![](33.png)
-
