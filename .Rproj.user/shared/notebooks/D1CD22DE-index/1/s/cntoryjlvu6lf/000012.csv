@@ -1,0 +1,7 @@
+"0",""
+"0","#|fig-width: 300"
+"0","#|fig-align: ""center"""
+"0","#|ffig-height: 300"
+"0",""
+"0","df %>% mutate(item_vis=round(item_vis),Sales=round(Sales,2))%>% "
+"0","rename_with(.fn = toupper,.cols = everything()) %>%head(20) %>% gt()"
