@@ -14,53 +14,11 @@
     "text": "Email:\n\n\nmohamed-elkholy84@outlook.com\n\n\nafaaqitc@outlook.com\n\n\nUSDT_TRC20"
   },
   {
-    "objectID": "posts/super_store/super_store.html",
-    "href": "posts/super_store/super_store.html",
-    "title": "Sales Of Super Store Dashboard 2024!",
+    "objectID": "posts/Coffee_Shop/coffee.html",
+    "href": "posts/Coffee_Shop/coffee.html",
+    "title": "Coffee Shop Sales Analysis Dashboard 2024!",
     "section": "",
-    "text": "Dashboard Super Store Dataset\n\n\n“Cleannig Data , Make Factors , Dates Grids”\n\n\n\nDataset\n\n\nDashboard"
-  },
-  {
-    "objectID": "posts/BTC/index.html",
-    "href": "posts/BTC/index.html",
-    "title": "BTC Analysis Model",
-    "section": "",
-    "text": "Data Periods From: Jan 2015 To Aug 2023\n\n\nTarget : Forecasting Model For Next 8 Months.\n\n\nHere"
-  },
-  {
-    "objectID": "posts/SuperMarketG/index.html",
-    "href": "posts/SuperMarketG/index.html",
-    "title": "SuperMarket Sales Dashboard",
-    "section": "",
-    "text": "#|fig-width: 300\n#|fig-align: \"center\"\n#|label: \"Clean Data R Script\"\n#|ffig-height: 300\n\n\nlibrary(pacman)\n\np_load(\"tidyr\",\"dplyr\",\"lubridate\",\"formattable\",\n\"data.table\",\"stringr\",\"gmodels\",\"gt\",\"DT\",\"janitor\",\"scales\",\"ggplot2\",\"plotly\",\n\"GGally\",\"openxlsx\",\"forecast\",\"tseries\",\"readxl\")\n\n\ndf&lt;-read.xlsx(\"~/Desktop/PowerBI/Blinkit Data/BlinkIT Grocery Data.xlsx\")\n\ndf&lt;-\ndf %&gt;% rename(fat_conternt=Item.Fat.Content,item_type=Item.Type,est_year=Outlet.Establishment.Year,\nlocation=Outlet.Location.Type,size=Outlet.Size,outlet_type= Outlet.Type,item_vis= Item.Visibility,\nweight=Item.Weight) %&gt;% \nmutate(fat_conternt=as.factor(ifelse(fat_conternt==\"LF\",\"Low Fat\",ifelse(fat_conternt==\"low fat\",\"Low Fat\",\nifelse(fat_conternt==\"reg\",\"Regular\",fat_conternt))))) %&gt;% \nmutate(weight=ifelse(is.na(weight),0,weight),\nitem_type=as.factor(item_type),location=as.factor(location),size=as.factor(size),\noutlet_type=as.factor(outlet_type)) %&gt;% \nselect(fat_conternt,item_type,size,location,outlet_type,est_year,item_vis,weight,Sales,Rating) \n\n\n#|fig-width: 300\n#|fig-align: \"center\"\n#|ffig-height: 300\n\ndf %&gt;% mutate(item_vis=round(item_vis),Sales=round(Sales,2))%&gt;% \nrename_with(.fn = toupper,.cols = everything()) %&gt;%head(20) %&gt;% gt()\n\n\n\n\n\n\n\n\nFAT_CONTERNT\nITEM_TYPE\nSIZE\nLOCATION\nOUTLET_TYPE\nEST_YEAR\nITEM_VIS\nWEIGHT\nSALES\nRATING\n\n\n\n\nRegular\nFruits and Vegetables\nMedium\nTier 1\nSupermarket Type1\n2012\n0\n15.10\n145.48\n5\n\n\nLow Fat\nHealth and Hygiene\nMedium\nTier 3\nSupermarket Type2\n2022\n0\n11.80\n115.35\n5\n\n\nRegular\nFrozen Foods\nSmall\nTier 1\nSupermarket Type1\n2016\n0\n13.85\n165.02\n5\n\n\nRegular\nCanned\nHigh\nTier 3\nSupermarket Type1\n2014\n0\n12.15\n126.50\n5\n\n\nLow Fat\nSoft Drinks\nSmall\nTier 2\nSupermarket Type1\n2015\n0\n19.60\n55.16\n5\n\n\nLow Fat\nFrozen Foods\nSmall\nTier 2\nSupermarket Type1\n2020\n0\n8.89\n102.40\n5\n\n\nLow Fat\nHealth and Hygiene\nSmall\nTier 3\nGrocery Store\n2011\n0\n11.80\n81.46\n5\n\n\nLow Fat\nHousehold\nSmall\nTier 2\nSupermarket Type1\n2015\n0\n19.70\n96.07\n5\n\n\nLow Fat\nFruits and Vegetables\nHigh\nTier 3\nSupermarket Type1\n2014\n0\n20.75\n124.17\n5\n\n\nLow Fat\nCanned\nMedium\nTier 3\nSupermarket Type3\n2018\n0\n0.00\n181.93\n5\n\n\nLow Fat\nSnack Foods\nMedium\nTier 3\nSupermarket Type3\n2018\n0\n0.00\n109.89\n5\n\n\nLow Fat\nHealth and Hygiene\nSmall\nTier 2\nSupermarket Type1\n2017\n0\n18.85\n192.18\n5\n\n\nLow Fat\nFruits and Vegetables\nMedium\nTier 3\nSupermarket Type2\n2022\n0\n17.10\n112.39\n5\n\n\nLow Fat\nHousehold\nHigh\nTier 3\nSupermarket Type1\n2014\n0\n16.35\n195.21\n5\n\n\nLow Fat\nMeat\nMedium\nTier 3\nSupermarket Type3\n2018\n0\n0.00\n173.17\n5\n\n\nRegular\nFruits and Vegetables\nSmall\nTier 2\nSupermarket Type1\n2017\n0\n20.25\n222.18\n5\n\n\nLow Fat\nBreads\nMedium\nTier 3\nSupermarket Type2\n2022\n0\n17.85\n93.74\n5\n\n\nLow Fat\nHousehold\nMedium\nTier 1\nSupermarket Type1\n2012\n0\n19.20\n197.61\n5\n\n\nLow Fat\nFruits and Vegetables\nMedium\nTier 3\nSupermarket Type3\n2018\n0\n0.00\n98.77\n5\n\n\nLow Fat\nHard Drinks\nMedium\nTier 3\nSupermarket Type2\n2022\n0\n12.10\n178.57\n5"
-  },
-  {
-    "objectID": "posts/AdvWorks_DB/adv.html",
-    "href": "posts/AdvWorks_DB/adv.html",
-    "title": "AdventureWorks DB Dashboard 2024!",
-    "section": "",
-    "text": "Dashboard For AdventureWorks Database Data\n\n\nDashboard"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Mohammed Mhmoud",
-    "section": "",
-    "text": "Crypto & Data Analysis Geek\n\n\nPostgreSQL , R ,Linux , GSheets, Excel , PoweBI , Looker.Studio"
-  },
-  {
-    "objectID": "posts/MTrade/mtrade.html",
-    "href": "posts/MTrade/mtrade.html",
-    "title": "Binary Trading Dashboard 2024!",
-    "section": "",
-    "text": "Dashboard For Binary Trading Data\n\n\n“Cleannig Data , Make Factors , Dates Grids , Detect Currencies Countries,Round Wallet Amount Detect.”\n\n\nDashboard"
-  },
-  {
-    "objectID": "posts/SP500/sp500.html",
-    "href": "posts/SP500/sp500.html",
-    "title": "S&P 500 Forecasting Moldel",
-    "section": "",
-    "text": "Data Period: Nov 2023 - Aug 2024\n\n\nTarget: Forecating SP500 Index Prices For Next Year.\n\n\nSP500"
+    "text": "Dashboard\n\n\nDataset"
   },
   {
     "objectID": "posts/TexasOil/oil.html",
@@ -70,18 +28,53 @@
     "text": "Data Period: Jan 2024 - Aug 2024\n\n\nTarget: Forecating Texas Oil Index Prices For Next 18 Months.\nOIL-Forecast"
   },
   {
-    "objectID": "posts/Coffee_Shop/coffee.html",
-    "href": "posts/Coffee_Shop/coffee.html",
-    "title": "Coffee Shop Sales Analysis Dashboard 2024!",
+    "objectID": "posts/SP500/sp500.html",
+    "href": "posts/SP500/sp500.html",
+    "title": "S&P 500 Forecasting Moldel",
     "section": "",
-    "text": "Dashboard\n\n\nDataset"
+    "text": "Data Period: Nov 2023 - Aug 2024\n\n\nTarget: Forecating SP500 Index Prices For Next Year.\n\n\nSP500"
   },
   {
-    "objectID": "Blog.html",
-    "href": "Blog.html",
-    "title": "Protfolio",
+    "objectID": "posts/MTrade/mtrade.html",
+    "href": "posts/MTrade/mtrade.html",
+    "title": "Binary Trading Dashboard 2024!",
     "section": "",
-    "text": "Certificates"
+    "text": "Dashboard For Binary Trading Data\n\n\n“Cleannig Data , Make Factors , Dates Grids , Detect Currencies Countries,Round Wallet Amount Detect.”\n\n\nDashboard"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Mohammed Mhmoud",
+    "section": "",
+    "text": "Crypto & Data Analysis Geek\n\n\nPostgreSQL , R ,Linux , GSheets, Excel , PoweBI , Looker.Studio"
+  },
+  {
+    "objectID": "posts/AdvWorks_DB/adv.html",
+    "href": "posts/AdvWorks_DB/adv.html",
+    "title": "AdventureWorks DB Dashboard 2024!",
+    "section": "",
+    "text": "Dashboard For AdventureWorks Database Data\n\n\nDashboard"
+  },
+  {
+    "objectID": "posts/SuperMarketG/index.html",
+    "href": "posts/SuperMarketG/index.html",
+    "title": "SuperMarket Sales Dashboard",
+    "section": "",
+    "text": "#|fig-width: 300\n#|fig-align: \"center\"\n#|label: \"Clean Data R Script\"\n#|ffig-height: 300\n\n\nlibrary(pacman)\n\np_load(\"tidyr\",\"dplyr\",\"lubridate\",\"formattable\",\n\"data.table\",\"stringr\",\"gmodels\",\"gt\",\"DT\",\"janitor\",\"scales\",\"ggplot2\",\"plotly\",\n\"GGally\",\"openxlsx\",\"forecast\",\"tseries\",\"readxl\")\n\n\ndf&lt;-read.xlsx(\"~/Desktop/PowerBI/Blinkit Data/BlinkIT Grocery Data.xlsx\")\n\ndf&lt;-\ndf %&gt;% rename(fat_conternt=Item.Fat.Content,item_type=Item.Type,est_year=Outlet.Establishment.Year,\nlocation=Outlet.Location.Type,size=Outlet.Size,outlet_type= Outlet.Type,item_vis= Item.Visibility,\nweight=Item.Weight) %&gt;% \nmutate(fat_conternt=as.factor(ifelse(fat_conternt==\"LF\",\"Low Fat\",ifelse(fat_conternt==\"low fat\",\"Low Fat\",\nifelse(fat_conternt==\"reg\",\"Regular\",fat_conternt))))) %&gt;% \nmutate(weight=ifelse(is.na(weight),0,weight),\nitem_type=as.factor(item_type),location=as.factor(location),size=as.factor(size),\noutlet_type=as.factor(outlet_type)) %&gt;% \nselect(fat_conternt,item_type,size,location,outlet_type,est_year,item_vis,weight,Sales,Rating) \n\n\n#|fig-width: 300\n#|fig-align: \"center\"\n#|ffig-height: 300\n\ndf %&gt;% mutate(item_vis=round(item_vis),Sales=round(Sales,2))%&gt;% \nrename_with(.fn = toupper,.cols = everything()) %&gt;%head(20) %&gt;% gt()\n\n\n\n\n\n\n\n\nFAT_CONTERNT\nITEM_TYPE\nSIZE\nLOCATION\nOUTLET_TYPE\nEST_YEAR\nITEM_VIS\nWEIGHT\nSALES\nRATING\n\n\n\n\nRegular\nFruits and Vegetables\nMedium\nTier 1\nSupermarket Type1\n2012\n0\n15.10\n145.48\n5\n\n\nLow Fat\nHealth and Hygiene\nMedium\nTier 3\nSupermarket Type2\n2022\n0\n11.80\n115.35\n5\n\n\nRegular\nFrozen Foods\nSmall\nTier 1\nSupermarket Type1\n2016\n0\n13.85\n165.02\n5\n\n\nRegular\nCanned\nHigh\nTier 3\nSupermarket Type1\n2014\n0\n12.15\n126.50\n5\n\n\nLow Fat\nSoft Drinks\nSmall\nTier 2\nSupermarket Type1\n2015\n0\n19.60\n55.16\n5\n\n\nLow Fat\nFrozen Foods\nSmall\nTier 2\nSupermarket Type1\n2020\n0\n8.89\n102.40\n5\n\n\nLow Fat\nHealth and Hygiene\nSmall\nTier 3\nGrocery Store\n2011\n0\n11.80\n81.46\n5\n\n\nLow Fat\nHousehold\nSmall\nTier 2\nSupermarket Type1\n2015\n0\n19.70\n96.07\n5\n\n\nLow Fat\nFruits and Vegetables\nHigh\nTier 3\nSupermarket Type1\n2014\n0\n20.75\n124.17\n5\n\n\nLow Fat\nCanned\nMedium\nTier 3\nSupermarket Type3\n2018\n0\n0.00\n181.93\n5\n\n\nLow Fat\nSnack Foods\nMedium\nTier 3\nSupermarket Type3\n2018\n0\n0.00\n109.89\n5\n\n\nLow Fat\nHealth and Hygiene\nSmall\nTier 2\nSupermarket Type1\n2017\n0\n18.85\n192.18\n5\n\n\nLow Fat\nFruits and Vegetables\nMedium\nTier 3\nSupermarket Type2\n2022\n0\n17.10\n112.39\n5\n\n\nLow Fat\nHousehold\nHigh\nTier 3\nSupermarket Type1\n2014\n0\n16.35\n195.21\n5\n\n\nLow Fat\nMeat\nMedium\nTier 3\nSupermarket Type3\n2018\n0\n0.00\n173.17\n5\n\n\nRegular\nFruits and Vegetables\nSmall\nTier 2\nSupermarket Type1\n2017\n0\n20.25\n222.18\n5\n\n\nLow Fat\nBreads\nMedium\nTier 3\nSupermarket Type2\n2022\n0\n17.85\n93.74\n5\n\n\nLow Fat\nHousehold\nMedium\nTier 1\nSupermarket Type1\n2012\n0\n19.20\n197.61\n5\n\n\nLow Fat\nFruits and Vegetables\nMedium\nTier 3\nSupermarket Type3\n2018\n0\n0.00\n98.77\n5\n\n\nLow Fat\nHard Drinks\nMedium\nTier 3\nSupermarket Type2\n2022\n0\n12.10\n178.57\n5"
+  },
+  {
+    "objectID": "posts/BTC/index.html",
+    "href": "posts/BTC/index.html",
+    "title": "BTC Analysis Model",
+    "section": "",
+    "text": "Data Periods From: Jan 2015 To Aug 2023\n\n\nTarget : Forecasting Model For Next 8 Months.\n\n\nHere"
+  },
+  {
+    "objectID": "posts/super_store/super_store.html",
+    "href": "posts/super_store/super_store.html",
+    "title": "Sales Of Super Store Dashboard 2024!",
+    "section": "",
+    "text": "Dashboard Super Store Dataset\n\n\n“Cleannig Data , Make Factors , Dates Grids”\n\n\n\nDataset\n\n\nDashboard"
   },
   {
     "objectID": "posts/DowJones/index.html",
@@ -89,5 +82,12 @@
     "title": "DowJones Analysis Model",
     "section": "",
     "text": "Data Periods From: Jan 2020 - Sep 2024\n\n\nTarget : Forecasting Model For Next 18 Months.\n\n\nDowJones_Model"
+  },
+  {
+    "objectID": "Blog.html",
+    "href": "Blog.html",
+    "title": "Protfolio",
+    "section": "",
+    "text": "Certificates"
   }
 ]

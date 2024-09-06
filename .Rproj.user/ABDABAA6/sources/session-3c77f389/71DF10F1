@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/AFAAQITC-Report/Jporfolio/posts/DowJones/index.qmd",
     "project_path": "posts/DowJones/index.qmd",
     "type": "quarto_markdown",
-    "hash": "2396003538",
+    "hash": "1993814500",
     "contents": "",
     "dirty": false,
     "created": 1725661720773.0,
@@ -17,15 +17,15 @@
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
         "rmdVisualModeLocation": "1:0",
-        "cursorPosition": "3,16",
-        "scrollLine": "0"
+        "cursorPosition": "14,0",
+        "scrollLine": "2"
     },
     "folds": "",
-    "lastKnownWriteTime": 1725661853,
+    "lastKnownWriteTime": 1725662148,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1725661853037,
+    "last_content_update": 1725662148729,
     "read_only": false,
     "read_only_alternatives": []
 }
