@@ -13,6 +13,6 @@ categories: [Dashboard,R]
 
 ![](tbl.png)
 
-[Dataset](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final){target="_blank"}
+### [Dataset](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final){target="_blank"}
 
-[Dashboard](https://afaaqitc.github.io/super_store/){target="\"_blank"}
+### [Dashboard](https://afaaqitc.github.io/super_store/){target="\"_blank"}

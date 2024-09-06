@@ -5,8 +5,15 @@ date: "2024-08-23"
 categories: [PowerBI,Dashboard]
 ---
 
-### R Data Clean Script
+## Powe BI SuperMarket G Dashboard 
 
+![](1.PNG)
+
+
+![](2.PNG)
+
+
+### R Data Clean Script
 ```{r}
 #|fig-width: 300
 #|fig-align: "center"
@@ -34,7 +41,7 @@ outlet_type=as.factor(outlet_type)) %>%
 select(fat_conternt,item_type,size,location,outlet_type,est_year,item_vis,weight,Sales,Rating) 
 ```
 
-### Data Sample 
+### Data Sample
 
 ```{r}
 
@@ -48,9 +55,9 @@ rename_with(.fn = toupper,.cols = everything()) %>%head(20) %>% gt()
 
 
 
-![](1.PNG)
 
 
 
-![](2.PNG)
+
+
 

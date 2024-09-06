@@ -11,4 +11,4 @@ categories: [R,Analysis]
 
 #### Target : Forecasting Model For Next 8 Months.
 
-[Here](https://afaaqitc.github.io/BTC-Forecast/){target="\"_blank"}
+### [Here](https://afaaqitc.github.io/BTC-Forecast/){target="_blank"}

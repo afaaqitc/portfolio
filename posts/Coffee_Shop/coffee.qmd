@@ -9,6 +9,6 @@ categories: [Dashboard,R]
 
 ![](pic.png){width="600,align=\"middle\""}
 
-[Dashboard](https://afaaqitc.github.io/coffee_shop/){target="\"_blank"}
+### [Dashboard](https://afaaqitc.github.io/coffee_shop/){target="\"_blank"}
 
-[Dataset](coffee.csv){target="\"_blank"}
+### [Dataset](coffee.csv){target="\"_blank"}
