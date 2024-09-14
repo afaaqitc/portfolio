@@ -7,10 +7,14 @@ categories: [R,SQL,BI,Analysis]
 
 ![](1.PNG)
 
+
 ![](2.PNG)
+
 
 ![](3.PNG)
 
-[SQL_Sript](){target="_blank"}
 
-[R_Forecast_Sript](){target="_blank"}
+### [SQL_Sript](https://github.com/afaaqitc/Jporfolio/blob/main/posts/AdvWorks_BI/sql_script.sql){target="_blank"}
+
+
+### [R_Forecast_Sript](https://github.com/afaaqitc/Jporfolio/blob/main/posts/AdvWorks_BI/R_forecast_model_Script){target="_blank"}
