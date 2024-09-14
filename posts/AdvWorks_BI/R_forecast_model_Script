@@ -1,0 +1,65 @@
+setwd("D:\\PowerBI\\advworks")
+
+library(pacman)
+
+p_load("tidyr","dplyr","gmodels","janitor","ggplot2","plotly","GGally","stringr",
+"formattable","data.table","DT","gt","tibble","scales","lubridate",
+"openxlsx","readxl","fedmatch","forecast","tseries")
+
+
+items<-read_xlsx("advworks.xlsx",sheet = 1)
+od<-read_xlsx("advworks.xlsx",sheet = 2)
+oh<-read_xlsx("advworks.xlsx",sheet = 3)
+
+
+od<-od %>%mutate(ModifiedDate=as.Date(ModifiedDate))  
+  
+
+order_details<-items %>% inner_join(od,by="ProductID") 
+
+main<-oh %>% right_join(order_details,by="SalesOrderID")  
+
+main_months<-
+main %>%mutate(mn=round_date(OrderDate,"month")) %>%  
+group_by(mn) %>%summarize(sales=sum(sub_totals))
+
+
+
+real<-ts(main_months$sales,start = c(2011,1),end = c(2014,6),frequency = 12)
+
+rets<-ets(real)
+
+fr<-forecast(rets,h = 12)
+
+detect_forecast_model<-
+cbind(
+  data.frame(date= seq(as.Date("2014-08-01"),len=12,by="month"))
+  ,rownames_to_column(data.frame(fr)) %>% select(c(4,6))
+) %>% pivot_longer(!date,names_to ="item" ,values_to = "sales") %>% 
+  mutate(date=as.POSIXct(date))
+
+
+
+
+detect_forecast_model_chart<-
+cbind(
+  data.frame(date= seq(as.Date("2014-08-01"),len=12,by="month"))
+  ,rownames_to_column(data.frame(fr)) %>% select(c(4,6))
+) %>% pivot_longer(!date,names_to ="item" ,values_to = "sales") %>% 
+mutate(date=as.POSIXct(date)) %>% 
+ggplot(aes(x=date,y=sales,fill=item))+geom_bar(stat = "identity",position = "stack")+
+theme_bw()+scale_x_datetime(date_breaks = "month",date_labels = "%B%Y")+
+labs(x="",y="")+scale_y_continuous(labels = comma)+
+geom_text(aes(label =case_when(sales/1000000 >1~ paste(round(sales/1000000,2),"M",sep = ""),
+TRUE ~ paste(round(sales/1000,2),"K",sep = ""))),
+position = position_stack(vjust = 0.5),color="white",fontface = "bold")+
+scale_fill_brewer(palette = "Dark2")
+
+
+
+detect_forecast_model_main_chart<-
+autoplot(fr)+theme_bw()+scale_y_continuous(labels = comma)+labs(x="",y="")+
+  theme(axis.text.x = element_text(face = "bold",colour = "black"),
+        axis.text.y = element_text(face = "bold",colour = "black"))
+
+
