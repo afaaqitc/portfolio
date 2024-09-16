@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/AFAAQITC-Report/Jporfolio/Blog.qmd",
     "project_path": "Blog.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "3705450191",
     "contents": "",
     "dirty": false,
     "created": 1726417376584.0,
@@ -17,15 +17,15 @@
         "docOutlineVisible": "0",
         "rmdVisualCollapsedChunks": "",
         "rmdVisualModeLocation": "2:0",
-        "cursorPosition": "0,0",
+        "cursorPosition": "10,9",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1726417480,
+    "lastKnownWriteTime": 1726475885,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1726417480415,
+    "last_content_update": 1726475885675,
     "read_only": false,
     "read_only_alternatives": []
 }
