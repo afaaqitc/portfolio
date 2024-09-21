@@ -1,14 +1,14 @@
 {
-    "id": "038955EA",
-    "path": "~/Documents/GitHub/AFAAQITC-Report/Jporfolio/posts/Gold_Silver/index.qmd",
-    "project_path": "posts/Gold_Silver/index.qmd",
+    "id": "DB3B1C6A",
+    "path": "~/Documents/GitHub/AFAAQITC-Report/Jporfolio/posts/SP500/sp500.qmd",
+    "project_path": "posts/SP500/sp500.qmd",
     "type": "quarto_markdown",
-    "hash": "4242381803",
+    "hash": "1578284800",
     "contents": "",
     "dirty": false,
-    "created": 1726781852055.0,
+    "created": 1726896766773.0,
     "source_on_save": false,
-    "relative_order": 2,
+    "relative_order": 1,
     "properties": {
         "rmdVisualMode": "false",
         "rmdVisualWrapConfigured": "true",
@@ -16,16 +16,16 @@
         "Source": "Source",
         "docOutlineVisible": "0",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "103:0",
-        "cursorPosition": "9,63",
-        "scrollLine": "0"
+        "cursorPosition": "6,0",
+        "scrollLine": "6",
+        "rmdVisualModeLocation": "2:0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1726784704,
+    "lastKnownWriteTime": 1726897663,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1726784704,
+    "last_content_update": 1726897663195,
     "read_only": false,
     "read_only_alternatives": []
 }
