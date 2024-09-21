@@ -1,12 +1,12 @@
 {
-    "id": "DB3B1C6A",
-    "path": "~/Documents/GitHub/AFAAQITC-Report/Jporfolio/posts/SP500/sp500.qmd",
-    "project_path": "posts/SP500/sp500.qmd",
+    "id": "B1FAC3B6",
+    "path": "~/Documents/GitHub/AFAAQITC-Report/Jporfolio/Blog.qmd",
+    "project_path": "Blog.qmd",
     "type": "quarto_markdown",
-    "hash": "1578284800",
+    "hash": "1730304531",
     "contents": "",
     "dirty": false,
-    "created": 1726896766773.0,
+    "created": 1726906161331.0,
     "source_on_save": false,
     "relative_order": 1,
     "properties": {
@@ -16,16 +16,16 @@
         "Source": "Source",
         "docOutlineVisible": "0",
         "rmdVisualCollapsedChunks": "",
-        "cursorPosition": "6,0",
-        "scrollLine": "6",
-        "rmdVisualModeLocation": "2:0"
+        "rmdVisualModeLocation": "2:0",
+        "cursorPosition": "29,0",
+        "scrollLine": "12"
     },
     "folds": "",
-    "lastKnownWriteTime": 1726897663,
+    "lastKnownWriteTime": 1726906516,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1726897663195,
+    "last_content_update": 1726906516731,
     "read_only": false,
     "read_only_alternatives": []
 }
