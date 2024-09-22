@@ -53,7 +53,7 @@
     "href": "index.html",
     "title": "Mohammed Mhmoud",
     "section": "",
-    "text": "Crypto & Data Analysis Geek\n\n\nPostgreSQL , R ,Linux , GSheets, Excel , PoweBI , Looker.Studio"
+    "text": "Crypto & Data Analysis Geek\n\n\nR , SQL , Linux , GSheets , Excel , PoweBI & Looker.Studio"
   },
   {
     "objectID": "posts/AdvWorks_DB/adv.html",
@@ -95,13 +95,6 @@
     "href": "posts/DowJones/index.html",
     "title": "DowJones Analysis Model",
     "section": "",
-    "text": "Data Periods From: Jan 2020 - Sep 2024\n\n\nTarget : Forecasting Model For Next 18 Months.\n\n\nDowJones_Model"
-  },
-  {
-    "objectID": "Blog.html",
-    "href": "Blog.html",
-    "title": "Protfolio",
-    "section": "",
-    "text": "Certificates"
+    "text": "DowJones_Model"
   }
 ]

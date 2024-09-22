@@ -18,6 +18,7 @@
 [1,"\u001B[1m\u001B[34m\r[16/17] Blog.qmd\u001B[39m\u001B[22m\n"]
 [1,"\u001B[1m\u001B[34m\r[17/17] Portfolio.qmd\u001B[39m\u001B[22m\n"]
 [1,"\n"]
-[1,"\u001B[32mWatching files for changes\u001B[39m\n\u001B[32mBrowse at \u001B[39m\u001B[4m\u001B[32mhttp://localhost:7801/\u001B[39m\u001B[24m\n"]
+[1,"\u001B[32mWatching files for changes\u001B[39m\n\u001B[32mBrowse at \u001B[39m\u001B[4m\u001B[32mhttp://localhost:3776/\u001B[39m\u001B[24m\n"]
 [1,"\u001B[32mGET: /\u001B[39m\n"]
 [1,"\u001B[32mGET: /Blog.html\u001B[39m\n"]
+[1,"\u001B[32mGET: /contact.html\u001B[39m\n"]
