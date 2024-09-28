@@ -1,0 +1,16 @@
+---
+title: "Sales Excel Dashboard!"
+author: "MM"
+date: "2024-08-23"
+categories: [Dashboard,Excel]
+---
+
+![](1.PNG)
+
+# 
+
+![](2.PNG)
+
+# 
+
+![](3.PNG)
