@@ -1,12 +1,12 @@
 {
-    "id": "9EB42C98",
-    "path": "~/Documents/GitHub/AFAAQITC-Report/Jporfolio/posts/SP500/sp500.qmd",
-    "project_path": "posts/SP500/sp500.qmd",
+    "id": "AC92E031",
+    "path": "~/Documents/GitHub/AFAAQITC-Report/Jporfolio/posts/Sales_Report_ExcelDash/index.qmd",
+    "project_path": "posts/Sales_Report_ExcelDash/index.qmd",
     "type": "quarto_markdown",
-    "hash": "4014270769",
+    "hash": "2530952049",
     "contents": "",
     "dirty": false,
-    "created": 1728017447200.0,
+    "created": 1728026212940.0,
     "source_on_save": false,
     "relative_order": 1,
     "properties": {
@@ -16,16 +16,16 @@
         "Source": "Source",
         "docOutlineVisible": "0",
         "rmdVisualCollapsedChunks": "",
-        "cursorPosition": "13,0",
-        "scrollLine": "8",
-        "rmdVisualModeLocation": "110:90"
+        "rmdVisualModeLocation": "121:1620.800048828125",
+        "cursorPosition": "12,0",
+        "scrollLine": "2"
     },
     "folds": "",
-    "lastKnownWriteTime": 1728017506,
+    "lastKnownWriteTime": 1728026256,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1728017506838,
+    "last_content_update": 1728026256447,
     "read_only": false,
     "read_only_alternatives": []
 }
