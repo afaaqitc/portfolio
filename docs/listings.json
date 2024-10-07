@@ -3,19 +3,19 @@
     "listing": "/Portfolio.html",
     "items": [
       "/posts/DowJones/index.html",
-      "/posts/AdvWorks_DB/adv.html",
-      "/posts/MTrade/mtrade.html",
-      "/posts/SuperMarketG/index.html",
-      "/posts/AdvWorks_BI/index.html",
-      "/posts/SP500/sp500.html",
-      "/posts/BTC/index.html",
       "/posts/TexasOil/oil.html",
+      "/posts/AdvWorks_BI/index.html",
       "/posts/Gold_Silver/index.html",
-      "/posts/super_store/super_store.html",
+      "/posts/SP500/sp500.html",
       "/posts/Coffee_Shop/coffee.html",
       "/posts/SuperStore_BI/index.html",
-      "/posts/Paients_BI/index.html",
-      "/posts/Sales_Report_ExcelDash/index.html"
+      "/posts/BTC/index.html",
+      "/posts/Sales_Report_ExcelDash/index.html",
+      "/posts/super_store/super_store.html",
+      "/posts/SuperMarketG/index.html",
+      "/posts/MTrade/mtrade.html",
+      "/posts/AdvWorks_DB/adv.html",
+      "/posts/Paients_BI/index.html"
     ]
   }
 ]
