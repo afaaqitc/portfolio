@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/Jporfolio/index.qmd",
     "project_path": "index.qmd",
     "type": "quarto_markdown",
-    "hash": "3767156416",
+    "hash": "2664603950",
     "contents": "",
     "dirty": false,
     "created": 1728987579187.0,
@@ -18,14 +18,14 @@
         "rmdVisualCollapsedChunks": "",
         "cursorPosition": "0,0",
         "scrollLine": "0",
-        "rmdVisualModeLocation": "530:356"
+        "rmdVisualModeLocation": "440:298.18182373046875"
     },
     "folds": "",
-    "lastKnownWriteTime": 1728987600,
+    "lastKnownWriteTime": 1730939515,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1728987600465,
+    "last_content_update": 1730939515679,
     "read_only": false,
     "read_only_alternatives": []
 }
