@@ -1,6 +1,6 @@
 ---
 title: "Mohammed Mhmoud"
-image: prof.jpg
+image: prof.jpeg
 about:
   template: jolla
   links:
