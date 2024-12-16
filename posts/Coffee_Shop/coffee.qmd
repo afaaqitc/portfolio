@@ -5,10 +5,15 @@ date: "2024-08-23"
 categories: [Dashboard,R]
 ---
 
-![](coffee.jpg)
+```{r,out.width="80%",echo=FALSE,message=FALSE,warning=FALSE,fig.align='center'}
+knitr::include_graphics("coffee.jpg")
+```
 
-![](pic.png){width="600,align=\"middle\""}
 
+```{r,out.width="80%",echo=FALSE,message=FALSE,warning=FALSE,fig.align='center'}
+knitr::include_graphics("pic.png")
+```
+ 
 ### [Dashboard](https://afaaqitc.github.io/coffee_shop/){target="\"_blank"}
 
 ### [Dataset](coffee.csv){target="\"_blank"}

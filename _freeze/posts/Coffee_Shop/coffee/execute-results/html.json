@@ -1,0 +1,15 @@
+{
+  "hash": "d488bb9294d64bbf9acbe1c6b683c248",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Coffee Shop Sales Analysis Dashboard 2024!\"\nauthor: \"MM\"\ndate: \"2024-08-23\"\ncategories: [Dashboard,R]\n---\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](coffee.jpg){fig-align='center' width=80%}\n:::\n:::\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](pic.png){fig-align='center' width=80%}\n:::\n:::\n\n\n \n### [Dashboard](https://afaaqitc.github.io/coffee_shop/){target=\"\\\"_blank\"}\n\n### [Dataset](coffee.csv){target=\"\\\"_blank\"}\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

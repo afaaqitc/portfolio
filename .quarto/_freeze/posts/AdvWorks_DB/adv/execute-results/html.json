@@ -1,0 +1,15 @@
+{
+  "hash": "b4ef6fb5268d7d9ff5f7fd970582e549",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"AdventureWorks DB Dashboard 2024!\"\nauthor: \"MM\"\ndate: \"2024-08-23\"\ncategories: [Dashboard,R,SQLServer]\n---\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](adv.jpeg){fig-align='center' width=80%}\n:::\n:::\n\n\n<center>\n<font size=\"+3\">**Dashboard For AdventureWorks Database Data**</font>\n</center>\n\n### [Dashboard](https://afaaqitc.github.io/AdvWorks-Report/){target=\"_blank\"}\n\n### [Video](https://www.youtube.com/watch?v=wIYpzi95mgU){target=\"_blank\"}\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

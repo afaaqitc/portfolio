@@ -1,0 +1,15 @@
+{
+  "hash": "f72555fc0c5e82fa1643e77c30eef401",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"S&P 500 Forecasting Moldel\"\nauthor: \"MM\"\ndate: \"2024-08-23\"\ncategories: [R,Analysis]\n---\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](top15.png){fig-align='center' width=90%}\n:::\n:::\n\n\n---\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](next.png){fig-align='center' width=90%}\n:::\n:::\n\n\n---\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](last.png){fig-align='center' width=90%}\n:::\n:::\n\n---\n<center><font size=\"+2\">***[SP500](https://afaaqitc.github.io/SP500){target=\"_blank\"}***</font></center>",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

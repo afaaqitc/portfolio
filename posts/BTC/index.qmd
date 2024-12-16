@@ -5,10 +5,16 @@ date: "2024-08-23"
 categories: [R,Analysis]
 ---
 
-![](btc.jpeg)
+```{r,out.width="90%",echo=FALSE,message=FALSE,warning=FALSE,fig.align='center'}
+knitr::include_graphics("btc.jpeg")
+```
 
-#### Data Periods From: Jan 2015 To Aug 2023
 
-#### Target : Forecasting Model For Next 8 Months.
+<center><font size="+2">**Data Periods From: Jan 2015 To Aug 2023**</font></center>
 
-### [Here](https://afaaqitc.github.io/BTC-Forecast/){target="_blank"}
+
+<center><font size="+2">**Target : Forecasting Model For Next 8 Months.**</font></center>
+
+<center><font size="+2">**[Here](https://afaaqitc.github.io/BTC-Forecast/){target="_blank"}**</font></center>
+
+ 

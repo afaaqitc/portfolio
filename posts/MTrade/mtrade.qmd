@@ -5,10 +5,14 @@ date: "2024-08-23"
 categories: [Dashboard,R]
 ---
 
-![](mt.png)
+```{r,out.width="90%",echo=FALSE,warning=FALSE,message=FALSE,fig.align='center'}
+knitr::include_graphics("mt.png")
+```
 
-#### Dashboard For Binary Trading Data
+---
 
-#### "Cleannig Data , Make Factors , Dates Grids , Detect Currencies Countries,Round Wallet Amount Detect. "
+<center><font size="+2">**Dashboard For Binary Trading Data**</font></center>
 
-### [Dashboard](https://afaaqitc.github.io/Trade_Report/){target="_blank"}
+<center><font size="+2">**"Cleannig Data , Make Factors , Dates Grids , Detect Currencies Countries,Round Wallet Amount Detect. "**</font></centerr>
+
+<center><font size="+2">**[Dashboard](https://afaaqitc.github.io/Trade_Report/){target="_blank"}**</font></center>

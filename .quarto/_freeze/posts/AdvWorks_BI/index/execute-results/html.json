@@ -1,0 +1,15 @@
+{
+  "hash": "d7135249348df5d5c70ab31416863338",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"AdvWorks PoweBI Dashboard\"\nauthor: \"MM\"\ndate: \"2024-08-23\"\ncategories: [R,SQL,BI,Analysis]\n---\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](1.PNG){fig-align='center' width=80%}\n:::\n:::\n\n\n\n--- \n\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](2.PNG){fig-align='center' width=80%}\n:::\n:::\n\n\n\n---\n\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](3.PNG){fig-align='center' width=80%}\n:::\n:::\n\n\n\n\n### [SQL_Sript](https://github.com/afaaqitc/Jporfolio/blob/main/posts/AdvWorks_BI/sql_script.sql){target=\"_blank\"}\n\n### [R_Forecast_Sript](https://github.com/afaaqitc/Jporfolio/blob/main/posts/AdvWorks_BI/R_forecast_model_Script){target=\"_blank\"}\n\n### [Video](https://www.youtube.com/watch?v=wIYpzi95mgU){target=\"_blank\"}\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

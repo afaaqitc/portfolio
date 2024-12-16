@@ -5,11 +5,22 @@ date: "2024-08-23"
 categories: [R,SQL,BI,Analysis]
 ---
 
-![](1.PNG)
+```{r,out.width="80%",echo=FALSE,message=FALSE,warning=FALSE,fig.align='center'}
+knitr::include_graphics("1.PNG")
+```
 
-![](2.PNG)
+--- 
 
-![](3.PNG)
+```{r,out.width="80%",echo=FALSE,message=FALSE,warning=FALSE,fig.align='center'}
+knitr::include_graphics("2.PNG")
+```
+
+---
+
+```{r,out.width="80%",echo=FALSE,message=FALSE,warning=FALSE,fig.align='center'}
+knitr::include_graphics("3.PNG")
+```
+
 
 ### [SQL_Sript](https://github.com/afaaqitc/Jporfolio/blob/main/posts/AdvWorks_BI/sql_script.sql){target="_blank"}
 

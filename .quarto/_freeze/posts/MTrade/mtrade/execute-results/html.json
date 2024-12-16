@@ -1,0 +1,15 @@
+{
+  "hash": "8e1eb2e1469d1d088564f67ae62a6b1a",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Binary Trading Dashboard 2024!\"\nauthor: \"MM\"\ndate: \"2024-08-23\"\ncategories: [Dashboard,R]\n---\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](mt.png){fig-align='center' width=90%}\n:::\n:::\n\n\n\n---\n\n<center><font size=\"+2\">**Dashboard For Binary Trading Data**</font></center>\n\n<center><font size=\"+2\">**\"Cleannig Data , Make Factors , Dates Grids , Detect Currencies Countries,Round Wallet Amount Detect. \"**</font></centerr>\n\n<center><font size=\"+2\">**[Dashboard](https://afaaqitc.github.io/Trade_Report/){target=\"_blank\"}**</font></center>\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

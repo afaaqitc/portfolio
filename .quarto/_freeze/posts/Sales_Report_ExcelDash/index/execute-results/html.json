@@ -1,0 +1,15 @@
+{
+  "hash": "681c09cc8e0fa4148c5edea69f17d1ca",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Sales Excel Dashboard!\"\nauthor: \"MM\"\ndate: \"2024-08-23\"\ncategories: [Dashboard,Excel]\n---\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](1.PNG){fig-align='center' width=90%}\n:::\n:::\n\n\n\n---\n\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](2.PNG){fig-align='center' width=90%}\n:::\n:::\n\n\n\n---\n\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](3.PNG){fig-align='center' width=90%}\n:::\n:::\n\n\n---\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](4.PNG){fig-align='center' width=90%}\n:::\n:::\n\n\n<center><font size=\"+2\">**[Video](https://youtu.be/QM6fmfoGWvY){target=\"_blank\"}**</font></center>\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "fc04d44082fc1f491e46e8c8ce71805c",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Super Store Sales Totals\"\nauthor: \"MM\"\ndate: \"2024-08-23\"\ncategories: [PowerBI,Dashboard]\n---\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](11.png){fig-align='center' width=90%}\n:::\n:::\n\n\n\n---\n\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](22.png){fig-align='center' width=90%}\n:::\n:::\n\n\n\n---\n\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](33.png){fig-align='center' width=90%}\n:::\n:::\n\n\n\n---\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "10d7fa03a71390b073a06487dd7ee589",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"BTC Analysis Model\"\nauthor: \"MM\"\ndate: \"2024-08-23\"\ncategories: [R,Analysis]\n---\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](btc.jpeg){fig-align='center' width=90%}\n:::\n:::\n\n\n\n\n<center><font size=\"+2\">**Data Periods From: Jan 2015 To Aug 2023**</font></center>\n\n\n<center><font size=\"+2\">**Target : Forecasting Model For Next 8 Months.**</font></center>\n\n<center><font size=\"+2\">**[Here](https://afaaqitc.github.io/BTC-Forecast/){target=\"_blank\"}**</font></center>\n\n### [Here](https://afaaqitc.github.io/BTC-Forecast/){target=\"_blank\"}\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

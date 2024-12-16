@@ -1,0 +1,15 @@
+{
+  "hash": "ec6fb26c29f66283d5268780bf6f711e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"DowJones Analysis Model\"\nauthor: \"MM\"\ndate: \"2024-9-07\"\ncategories: [R,Analysis]\n---\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](11.jpeg){fig-align='center' width=70%}\n:::\n:::\n\n\n\n---\n\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](main.png){fig-align='center' width=70%}\n:::\n:::\n\n\n\n---\n\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](last.png){fig-align='center' width=70%}\n:::\n:::\n\n\n---\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](next.png){fig-align='center' width=70%}\n:::\n:::\n\n\n\n<center><font size=\"+2\">**[DowJones_Model](https://afaaqitc.github.io/dowjones/){target=\"_blank\"}**</font></center>\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

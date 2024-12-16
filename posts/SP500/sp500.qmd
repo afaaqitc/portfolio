@@ -5,10 +5,20 @@ date: "2024-08-23"
 categories: [R,Analysis]
 ---
 
-![](top15.png)
+```{r,out.width="90%",echo=FALSE,warning=FALSE,message=FALSE,fig.align='center'}
+knitr::include_graphics("top15.png")
+```
+---
 
-![](next.png)
+```{r,out.width="90%",echo=FALSE,warning=FALSE,message=FALSE,fig.align='center'}
+knitr::include_graphics("next.png")
+```
 
-![](last.png)
+---
 
-### [SP500](https://afaaqitc.github.io/SP500){target="_blank"}
+```{r,out.width="90%",echo=FALSE,warning=FALSE,message=FALSE,fig.align='center'}
+knitr::include_graphics("last.png")
+```
+
+---
+<center><font size="+2">***[SP500](https://afaaqitc.github.io/SP500){target="_blank"}***</font></center>

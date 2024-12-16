@@ -5,8 +5,20 @@ date: "2024-08-23"
 categories: [PowerBI,Dashboard]
 ---
 
-![](11.png)
+```{r,out.width="90%",echo=FALSE,warning=FALSE,message=FALSE,fig.align='center'}
+knitr::include_graphics("11.png")
+```
 
-![](22.png)
+---
 
-![](33.png)
+```{r,out.width="90%",echo=FALSE,warning=FALSE,message=FALSE,fig.align='center'}
+knitr::include_graphics("22.png")
+```
+
+---
+
+```{r,out.width="90%",echo=FALSE,warning=FALSE,message=FALSE,fig.align='center'}
+knitr::include_graphics("33.png")
+```
+
+---

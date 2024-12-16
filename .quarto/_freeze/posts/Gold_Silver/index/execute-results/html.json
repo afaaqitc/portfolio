@@ -1,0 +1,15 @@
+{
+  "hash": "f350dd2d55c35ca81b00c50400c4c8b2",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Gold/Silver Analysis Model\"\nauthor: \"MM\"\ndate: \"2024-08-23\"\ncategories: [R,Analysis]\n---\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](metal.webp){fig-align='center' width=70%}\n:::\n:::\n\n\n\n\n\n<center><font size=\"+2\"> [Report Here](https://afaaqitc.github.io/Gold_Silver_Model/){target=\"_blank\"}\n</font></center>\n\n---\n\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](a.png){fig-align='center' width=70%}\n:::\n:::\n\n\n\n---\n\n\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](b.png){fig-align='center' width=70%}\n:::\n:::\n\n\n\n---\n\n\n\n\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](c.png){fig-align='center' width=70%}\n:::\n:::\n\n\n\n---\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

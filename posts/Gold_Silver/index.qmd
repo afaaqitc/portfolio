@@ -5,22 +5,36 @@ date: "2024-08-23"
 categories: [R,Analysis]
 ---
 
-![](metal.webp)
 
-
-### [Report Here](https://afaaqitc.github.io/Gold_Silver_Model/){target="_blank"}
-
-
-
-
-![](a.png)
+```{r,out.width="70%",echo=FALSE,warning=FALSE,message=FALSE,fig.align='center'}
+knitr::include_graphics("metal.webp")
+```
 
 
 
+<center><font size="+2"> [Report Here](https://afaaqitc.github.io/Gold_Silver_Model/){target="_blank"}
+</font></center>
 
-![](b.png)
+---
+
+```{r,out.width="70%",echo=FALSE,warning=FALSE,message=FALSE,fig.align='center'}
+knitr::include_graphics("a.png")
+```
+
+---
+
+
+```{r,out.width="70%",echo=FALSE,warning=FALSE,message=FALSE,fig.align='center'}
+knitr::include_graphics("b.png")
+```
+
+---
 
 
 
-![](c.png)
 
+```{r,out.width="70%",echo=FALSE,warning=FALSE,message=FALSE,fig.align='center'}
+knitr::include_graphics("c.png")
+```
+
+---

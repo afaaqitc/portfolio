@@ -5,17 +5,32 @@ date: "2024-08-23"
 categories: [Dashboard,R]
 ---
 
-![](ss.jpg)
 
-#### Dashboard Super Store Dataset
-
-#### "Cleannig Data , Make Factors , Dates Grids "
-
-![](tbl.png)
-
-### [Dataset](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final){target="_blank"}
-
-### [Dashboard](https://afaaqitc.github.io/super_store/){target="\"_blank"}
+```{r,out.width="90%",echo=FALSE,message=FALSE,warning=FALSE,fig.align='center'}
+knitr::include_graphics("ss.jpg")
+```
 
 
-### [Video](https://www.youtube.com/watch?v=soEWkBxrTVc){taget="_blank}
+---
+
+<center><font size="+2">**Dashboard Super Store Dataset**</font></center>
+
+<center><font size="+2">**"Cleannig Data , Make Factors , Dates Grids "**</font></center>
+
+---
+
+```{r,out.width="90%",echo=FALSE,message=FALSE,warning=FALSE,fig.align='center'}
+knitr::include_graphics("tbl.png")
+```
+
+---
+
+<center><font size="+2">**[Dataset](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final){target="_blank"}**</font></center>
+
+
+<center><font size="+2">**[Dashboard](https://afaaqitc.github.io/super_store/){target="\"_blank"}**</font></center>
+
+
+<center><font size="+2">**[Video](https://www.youtube.com/watch?v=soEWkBxrTVc){taget="_blank}**</font></center>
+
+---

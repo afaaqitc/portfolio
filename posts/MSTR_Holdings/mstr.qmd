@@ -5,30 +5,40 @@ date: "2024-11-29"
 categories: [R,Analysis]
 ---
 
-![](executive-team-michael-saylor.jpg)
+
+```{r,out.width="90%",fig.align='center',warning=FALSE,message=FALSE,echo=FALSE}
+knitr::include_graphics("page.png")
+```
 
 ---
 
-![](Picture1.png)
+<font size="+1">**Data Period: Aug 2020 - Dec 2024**</font>
+
+<font size="+1"> **Target: 1 Millions BTC \~ 2029.**</font>
+
+<font size="+1"> **Current: 423K BTC \~ Cost Avg: 61K\$ \~ Total Investments : 25B**</font>
+
+
+```{r,out.width="80%",fig.align='center',warning=FALSE,message=FALSE,echo=FALSE}
+knitr::include_graphics("2024-12-16_05-39.png")
+```
+
+------------------------------------------------------------------------
+
+```{r,out.width="80%",fig.align='center',warning=FALSE,message=FALSE,echo=FALSE}
+knitr::include_graphics("2024-12-10_00-02.png")
+```
+
+------------------------------------------------------------------------
+
+```{r,out.width="80%",fig.align='center',warning=FALSE,message=FALSE,echo=FALSE}
+knitr::include_graphics("2024-12-10_00-03.png")
+```
 
 ---
 
-![](2024-12-16_05-39.png)
+```{r,out.width="15%",fig.align='center',warning=FALSE,message=FALSE,echo=FALSE}
+knitr::include_graphics("qr.png")
+```
 
-------------------------------------------------------------------------
 
-![](2024-12-10_00-02.png)
-
-------------------------------------------------------------------------
-
-![](2024-12-10_00-03.png)
-
-------------------------------------------------------------------------
-
-#### **Data Period: Aug 2020 - Dec 2024**
-
-#### **Target: 1 Millions BTC \~ 2029.**
-
-#### **Current: 421K BTC \~ Cost Avg: 61K\$ \~ Total Investments : 23B**
-
-#### [MSTR BTC Report](https://rpubs.com/jdrk/MSTR){target="_blank"}

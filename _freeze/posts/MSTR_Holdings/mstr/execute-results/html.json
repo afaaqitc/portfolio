@@ -1,0 +1,15 @@
+{
+  "hash": "7821985c917194b538e76e06234020be",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"MSTR BTC Holdings\"\nauthor: \"MM\"\ndate: \"2024-11-29\"\ncategories: [R,Analysis]\n---\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](page.png){fig-align='center' width=90%}\n:::\n:::\n\n\n\n---\n\n<font size=\"+1\">**Data Period: Aug 2020 - Dec 2024**</font>\n\n<font size=\"+1\"> **Target: 1 Millions BTC \\~ 2029.**</font>\n\n<font size=\"+1\"> **Current: 423K BTC \\~ Cost Avg: 61K\\$ \\~ Total Investments : 25B**</font>\n\n\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](2024-12-16_05-39.png){fig-align='center' width=80%}\n:::\n:::\n\n\n\n------------------------------------------------------------------------\n\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](2024-12-10_00-02.png){fig-align='center' width=80%}\n:::\n:::\n\n\n\n------------------------------------------------------------------------\n\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](2024-12-10_00-03.png){fig-align='center' width=80%}\n:::\n:::\n\n\n\n---\n\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](qr.png){fig-align='center' width=15%}\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

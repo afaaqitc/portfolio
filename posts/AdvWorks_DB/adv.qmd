@@ -5,10 +5,13 @@ date: "2024-08-23"
 categories: [Dashboard,R,SQLServer]
 ---
 
-![](adv.jpeg)
-
-#### Dashboard For AdventureWorks Database Data
-
+```{r,out.width="80%",echo=FALSE,message=FALSE,warning=FALSE,fig.align='center'}
+knitr::include_graphics("adv.jpeg")
+```
+<center>
+<font size="+3">**Dashboard For AdventureWorks Database Data**</font>
+</center>
+  
 ### [Dashboard](https://afaaqitc.github.io/AdvWorks-Report/){target="_blank"}
 
 ### [Video](https://www.youtube.com/watch?v=wIYpzi95mgU){target="_blank"}

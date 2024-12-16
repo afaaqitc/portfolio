@@ -1,0 +1,15 @@
+{
+  "hash": "9cceb412e9ae69d39c867501bae32193",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Texas Oil Forecasting Moldel\"\nauthor: \"MM\"\ndate: \"2024-08-23\"\ncategories: [R,Analysis]\n---\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](toil.jpg){fig-align='center' width=90%}\n:::\n:::\n\n\n\n<center><font size=\"+2\">**Data Period: Jan 2024 - Aug 2024**</font></center>\n\n<center><font size=\"+2\">**Target: Forecating Texas Oil Index Prices For Next 18 Months.**</font></center>\n\n<center><font size=\"+2\">**[OIL-Forecast](https://afaaqitc.github.io/OIL-Forecast){target=\"_blank\"}**</font></center>\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

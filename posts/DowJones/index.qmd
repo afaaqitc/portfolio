@@ -5,28 +5,26 @@ date: "2024-9-07"
 categories: [R,Analysis]
 ---
 
-#
+```{r,out.width="70%",echo=FALSE,warning=FALSE,message=FALSE,fig.align='center'}
+knitr::include_graphics("11.jpeg")
+```
+
+---
+
+```{r,out.width="70%",echo=FALSE,warning=FALSE,message=FALSE,fig.align='center'}
+knitr::include_graphics("main.png")
+```
+
+---
+
+```{r,out.width="70%",echo=FALSE,warning=FALSE,message=FALSE,fig.align='center'}
+knitr::include_graphics("last.png")
+```
+---
+
+```{r,out.width="70%",echo=FALSE,warning=FALSE,message=FALSE,fig.align='center'}
+knitr::include_graphics("next.png")
+```
 
 
-![](11.jpeg)
-
-
-#
-
-
-![](main.png){fig-align="center"}
-
-
-#
-
-![](last.png)
-
-
-#
-
-
-![](next.png)
-
-
-
-### [DowJones_Model](https://afaaqitc.github.io/dowjones/){target="_blank"}
+<center><font size="+2">**[DowJones_Model](https://afaaqitc.github.io/dowjones/){target="_blank"}**</font></center>

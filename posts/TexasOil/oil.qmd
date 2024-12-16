@@ -5,10 +5,14 @@ date: "2024-08-23"
 categories: [R,Analysis]
 ---
 
-![](toil.jpg)
+```{r,out.width="90%",echo=FALSE,warning=FALSE,message=FALSE,fig.align='center'}
+knitr::include_graphics("toil.jpg")
+```
 
-#### Data Period: Jan 2024 - Aug 2024
+<center><font size="+2">**Data Period: Jan 2024 - Aug 2024**</font></center>
 
-#### Target: Forecating Texas Oil Index Prices For Next 18 Months.
+<center><font size="+2">**Target: Forecating Texas Oil Index Prices For Next 18 Months.**</font></center>
 
-[OIL-Forecast](https://afaaqitc.github.io/OIL-Forecast){target="_blank"}
+<center><font size="+2">**[OIL-Forecast](https://afaaqitc.github.io/OIL-Forecast){target="_blank"}**</font></center>
+
+
