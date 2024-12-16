@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: "docs"
+website:
+  title: "Portfolio"
+  navbar:
+    left: 
+      - text: "Projects"
+        file: Portfolio.qmd
+      - text: "Certificates"
+        file: Blog.qmd
+      - text: "Contact"
+        file: contact.qmd
+    right:
+      - icon: github
+        href: https://github.com/afaaqitc
+format:
+  html:
+    theme: sandstone
+    css: styles.css
+
+editor: visual
+
