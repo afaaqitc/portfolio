@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/Jporfolio/posts/MSTR_Holdings/mstr.qmd",
     "project_path": "posts/MSTR_Holdings/mstr.qmd",
     "type": "quarto_markdown",
-    "hash": "1758586605",
+    "hash": "2716029630",
     "contents": "",
     "dirty": false,
     "created": 1734321159811.0,
@@ -17,15 +17,15 @@
         "docOutlineVisible": "0",
         "rmdVisualCollapsedChunks": "",
         "rmdVisualModeLocation": "250:1550",
-        "cursorPosition": "27,8",
-        "scrollLine": "1"
+        "cursorPosition": "30,5",
+        "scrollLine": "20"
     },
     "folds": "",
-    "lastKnownWriteTime": 1734321370,
+    "lastKnownWriteTime": 1734321529,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1734321370979,
+    "last_content_update": 1734321529023,
     "read_only": false,
     "read_only_alternatives": []
 }

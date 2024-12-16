@@ -18,6 +18,9 @@ categories: [R,Analysis]
 ------------------------------------------------------------------------
 
 ![](2024-12-10_00-03.png)
+---
+
+---
 
 #### **Data Period: Aug 2020 - Dec 2024**
 
@@ -25,4 +28,4 @@ categories: [R,Analysis]
 
 #### **Current: 421K BTC \~ Cost Avg: 61K\$ \~ Total Investments : 23B**
 
-#### |> [MSTR BTC Report](https://rpubs.com/jdrk/MSTR){target="_blank"}
+#### [MSTR BTC Report](https://rpubs.com/jdrk/MSTR){target="_blank"}
