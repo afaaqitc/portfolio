@@ -12,11 +12,9 @@ knitr::include_graphics("page.png")
 
 ---
 
-<font size="+1">**Data Period: Aug 2020 - Dec 2024**</font>
+<font size="+1">**Data Period: Aug 2020 - Jan 2025**</font>
 
 <font size="+1"> **Target: 1 Millions BTC \~ 2029.**</font>
-
-<font size="+1"> **Current: 423K BTC \~ Cost Avg: 61K\$ \~ Total Investments : 25B**</font>
 
 
 ```{r,out.width="80%",fig.align='center',warning=FALSE,message=FALSE,echo=FALSE}
