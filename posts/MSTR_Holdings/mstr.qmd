@@ -5,17 +5,15 @@ date: "2024-11-29"
 categories: [R,Analysis]
 ---
 
-
 ```{r,out.width="90%",fig.align='center',warning=FALSE,message=FALSE,echo=FALSE}
 knitr::include_graphics("page.png")
 ```
 
----
+------------------------------------------------------------------------
 
 <font size="+1">**Data Period: Aug 2020 - Jan 2025**</font>
 
 <font size="+1"> **Target: 1 Millions BTC \~ 2029.**</font>
-
 
 ```{r,out.width="80%",fig.align='center',warning=FALSE,message=FALSE,echo=FALSE}
 knitr::include_graphics("2024-12-16_05-39.png")
@@ -33,10 +31,12 @@ knitr::include_graphics("2024-12-10_00-02.png")
 knitr::include_graphics("2024-12-10_00-03.png")
 ```
 
----
+```{r,out.width="80%",echo=FALSE,message=FALSE,warning=FALSE,fig.align='center'}
+knitr::include_graphics("gbtc.png")
+```
+
+------------------------------------------------------------------------
 
 ```{r,out.width="15%",fig.align='center',warning=FALSE,message=FALSE,echo=FALSE}
 knitr::include_graphics("rep.png")
 ```
-
-
